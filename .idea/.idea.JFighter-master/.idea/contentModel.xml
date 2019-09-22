@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\lisandan\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lisandan\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_JFighter-master.1893976293.00" t="ExcludeRecursive" />
+    <e p="C:\Users\lisandan\Desktop\自做项目\unityLearn\JFighter-master" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Old" t="Include">
+          <e p="Assets" t="Include">
+            <e p="EnemyArcher" t="Include">
+              <e p="animations enemy_archer01.txt" t="Include" />
+            </e>
+            <e p="EnemyBoss01" t="Include">
+              <e p="animations_boss01.txt" t="Include" />
+            </e>
+            <e p="EnemyBoss03" t="Include">
+              <e p="animations_boss01.txt" t="Include" />
+            </e>
+            <e p="enemyBossOrochi" t="Include">
+              <e p="animations_boss01-1.txt" t="Include" />
+            </e>
+            <e p="EnemyDoubleSwordsman" t="Include">
+              <e p="animations_double_swordsman01.txt" t="Include" />
+            </e>
+            <e p="EnemyMiniBoss01" t="Include">
+              <e p="animations_miniboss.txt" t="Include" />
+            </e>
+            <e p="EnemySwordsman" t="Include">
+              <e p="animations enemy_swordsman.txt" t="Include" />
+              <e p="animations enemy_swordsman02.txt" t="Include" />
+            </e>
+            <e p="iPhone Standard Assets" t="Include">
+              <e p="iPhone Shaders" t="Include">
+                <e p="iPhone Background.shader" t="Include" />
+                <e p="iPhone Detail.shader" t="Include" />
+                <e p="Lightmap Shaders" t="Include">
+                  <e p="iPhone Lightmap AlphaTest.shader" t="Include" />
+                  <e p="iPhone Lightmap Only.shader" t="Include" />
+                  <e p="iPhone Lightmap Reflective.shader" t="Include" />
+                </e>
+                <e p="Particle Shaders" t="Include">
+                  <e p="iPhone Multiply Culled.shader" t="Include" />
+                  <e p="iPhone Particles Additive Culled.shader" t="Include" />
+                </e>
+                <e p="Self Illumination" t="Include">
+                  <e p="iPhone Self Illuminated.shader" t="Include" />
+                </e>
+                <e p="Vertex Colored Shaders" t="Include">
+                  <e p="iPhone Transparent Vertex Color.shader" t="Include" />
+                  <e p="iPhone Vertex Colored.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Level03" t="Include">
+              <e p="animations zone01lift.txt" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="animations player.txt" t="Include" />
+              <e p="player_combo01.txt" t="Include" />
+              <e p="player_combos.txt" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="_TransparentVertexColor.shader" t="Include" />
+              <e p="_VertexColored.shader" t="Include" />
+              <e p="GCDifuse.shader" t="Include" />
+              <e p="Particle Alpha Blend-Z.shader" t="Include" />
+              <e p="Particles Additive Culled.shader" t="Include" />
+              <e p="Partocle Multiply Culled.shader" t="Include" />
+              <e p="TextureSimple.shader" t="Include" />
+              <e p="TextureSimpleComix.shader" t="Include" />
+              <e p="TextureSimpleCutOff.shader" t="Include" />
+              <e p="TransparentSimple.shader" t="Include" />
+              <e p="TransparentSimpleTwoSided.shader" t="Include" />
+              <e p="TransparentSimpleZBuffer.shader" t="Include" />
+              <e p="TransparentVertexColor.shader" t="Include" />
+              <e p="VertexColored.shader" t="Include" />
+            </e>
+          </e>
+          <e p="cn.yahoo.asxhl2007" t="Include">
+            <e p="BasicDialog" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BasicDialog.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Splash" t="Include">
+              <e p="readme.txt" t="Include" />
+              <e p="Script" t="Include">
+                <e p="SplashScreen.cs" t="Include" />
+                <e p="The9Settings.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Standard Assets" t="Include">
+            <e p="Image Effects (Pro Only)" t="Include">
+              <e p="_Sources" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="_BloomAndFlares" t="Include">
+                    <e p="AddAlphaHack.shader" t="Include" />
+                    <e p="AddStuff.shader" t="Include" />
+                    <e p="BrightPassFilter.shader" t="Include" />
+                    <e p="HollywoodFlareBlur.shader" t="Include" />
+                    <e p="HollywoodFlareStretch.shader" t="Include" />
+                    <e p="LensFlareCreate.shader" t="Include" />
+                    <e p="SeparableBlurPlus.shader" t="Include" />
+                    <e p="VignetteShader.shader" t="Include" />
+                  </e>
+                  <e p="_DepthOfField" t="Include">
+                    <e p="CopyDepthToRGBA.shader" t="Include" />
+                    <e p="DepthOfField.shader" t="Include" />
+                    <e p="DofForegroundBlur.shader" t="Include" />
+                    <e p="PreDepthOfField.shader" t="Include" />
+                    <e p="PreDepthOfFieldZRead.shader" t="Include" />
+                    <e p="RecordCenterDepth.shader" t="Include" />
+                    <e p="SeparableBlur.shader" t="Include" />
+                    <e p="SeparableRGBADepthBlur.shader" t="Include" />
+                    <e p="SeparableWeightedBlur.shader" t="Include" />
+                  </e>
+                  <e p="ChromaticAberrationShader.shader" t="Include" />
+                  <e p="ClearExceptSkyboxShader.shader" t="Include" />
+                  <e p="ColorCorrectionCurves.shader" t="Include" />
+                  <e p="ColorCorrectionCurvesSimple.shader" t="Include" />
+                  <e p="ColorCorrectionEffect.shader" t="Include" />
+                  <e p="ColorCorrectionSelective.shader" t="Include" />
+                  <e p="Contrast Stretch" t="Include">
+                    <e p="Adaptation.shader" t="Include" />
+                    <e p="Apply.shader" t="Include" />
+                    <e p="Luminance.shader" t="Include" />
+                    <e p="MinMaxReduction.shader" t="Include" />
+                  </e>
+                  <e p="ContrastComposite.shader" t="Include" />
+                  <e p="ConvertDepth.shader" t="Include" />
+                  <e p="CreaseApply.shader" t="Include" />
+                  <e p="DepthRGBA8RadialBlur.shader" t="Include" />
+                  <e p="EdgeApply.shader" t="Include" />
+                  <e p="EdgeBlurApply.shader" t="Include" />
+                  <e p="EdgeDetectNormals.shader" t="Include" />
+                  <e p="EdgeDetectNormalsHQ.shader" t="Include" />
+                  <e p="EdgeDetectX.shader" t="Include" />
+                  <e p="ExtractSkyboxShader.shader" t="Include" />
+                  <e p="FisheyeShader.shader" t="Include" />
+                  <e p="frag_ao.cginc" t="Include" />
+                  <e p="GlowCompose.shader" t="Include" />
+                  <e p="GlowConeTap.shader" t="Include" />
+                  <e p="GlowEffectDownsample.shader" t="Include" />
+                  <e p="GrayscaleEffect.shader" t="Include" />
+                  <e p="MotionBlur.shader" t="Include" />
+                  <e p="NoiseEffectShaderRGB.shader" t="Include" />
+                  <e p="NoiseEffectShaderYUV.shader" t="Include" />
+                  <e p="SepiaToneEffect.shader" t="Include" />
+                  <e p="ShowAlphaChannel.shader" t="Include" />
+                  <e p="SimpleClear.shader" t="Include" />
+                  <e p="SkyboxToRGBADepth.shader" t="Include" />
+                  <e p="SSAOShader.shader" t="Include" />
+                  <e p="SunShafts.shader" t="Include" />
+                  <e p="TwirlEffect.shader" t="Include" />
+                  <e p="VignettingShader.shader" t="Include" />
+                  <e p="VortexEffect.shader" t="Include" />
+                </e>
+              </e>
+              <e p="BlurEffect.cs" t="Include" />
+              <e p="ColorCorrectionEffect.cs" t="Include" />
+              <e p="ContrastStretchEffect.cs" t="Include" />
+              <e p="EdgeDetectEffect.cs" t="Include" />
+              <e p="GlowEffect.cs" t="Include" />
+              <e p="GrayscaleEffect.cs" t="Include" />
+              <e p="ImageEffectBase.cs" t="Include" />
+              <e p="ImageEffects.cs" t="Include" />
+              <e p="MotionBlur.cs" t="Include" />
+              <e p="NoiseEffect.cs" t="Include" />
+              <e p="RadialBlur.cs" t="Include" />
+              <e p="SepiaToneEffect.cs" t="Include" />
+              <e p="TwirlEffect.cs" t="Include" />
+              <e p="Vignetting.cs" t="Include" />
+              <e p="VortexEffect.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Constant" t="Include">
+            <e p="Enums.cs" t="Include" />
+          </e>
+          <e p="Controller" t="Include">
+            <e p="BtnCotroller.cs" t="Include" />
+            <e p="UiController.cs" t="Include" />
+          </e>
+          <e p="manager" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+          </e>
+          <e p="test.cs" t="Include" />
+        </e>
+      </e>
+      <e p="JFighter-master.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
