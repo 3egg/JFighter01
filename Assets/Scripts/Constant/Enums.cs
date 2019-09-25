@@ -19,7 +19,7 @@ namespace Const
     public enum UiConstant
     {
         UiButtons,   
-        GameName,
+        StartGame,
         MainMenu,
     }
 }

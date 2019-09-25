@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2812672492260662314}
   - component: {fileID: 2812672492260662312}
-  - component: {fileID: 2812672492260662315}
-  - component: {fileID: 2812672492260662313}
-  - component: {fileID: 2812672492260662742}
+  - component: {fileID: 1654194545}
+  - component: {fileID: 1654194546}
+  - component: {fileID: 2356533941400060411}
+  - component: {fileID: 2976436692076394269}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -46,36 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d603f26057150d4fbf91de28460a842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2812672492260662315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2812672492260662317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bef0109555abb5a42bc4da8b85d60272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuButton: {fileID: 0}
-  mainMenuGameName: {fileID: 0}
-  startGameTitle: {fileID: 0}
-  startGameButtonBg: {fileID: 0}
-  startGameButtons: {fileID: 0}
---- !u!114 &2812672492260662313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2812672492260662317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704c30ae403303f468aa253a99adb0bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2812672492260662742
+--- !u!114 &1654194545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,3 +61,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 0}
   startGame: {fileID: 0}
+  newGameWarning: {fileID: 0}
+  currentUiIndex: 0
+  escUi: []
+--- !u!114 &1654194546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812672492260662317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f89a822d292461a8cc016ad19782482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuButtons: {fileID: 0}
+  mainMenuGameName: {fileID: 0}
+  startGameTitle: {fileID: 0}
+  startGameButtonBg: {fileID: 0}
+  startGameButtons: {fileID: 0}
+  newGameWarning: {fileID: 0}
+--- !u!114 &2356533941400060411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812672492260662317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bfb7f639ab14bdf9fab1c9fbba33571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBtnIndex: 0
+--- !u!114 &2976436692076394269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812672492260662317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339be7b822c54489a47cfe9e6a9d5019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

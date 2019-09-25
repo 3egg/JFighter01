@@ -1,12 +1,27 @@
-﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UiController : MonoBehaviour
+namespace Controller
 {
-    public GameObject mainMenu;
-    public GameObject startGame;
+    public class UiController : MonoBehaviour
+    {
+        [SerializeField] private Transform mainMenu;
+        [SerializeField] private Transform startGame;
+        [SerializeField] private Transform newGameWarning;
+        [HideInInspector] public int currentUiIndex;
+        [HideInInspector] public List<Transform> escUi = new List<Transform>();
 
-    public static UiController instance { get; private set; } = new UiController();
-    
+        private void Awake()
+        {
+            escUi.Add(mainMenu);
+            escUi.Add(startGame);
+            escUi.Add(newGameWarning);
+        }
+
+        public Transform currentShowUi()
+        {
+            return escUi[currentUiIndex];
+        }
+    }
 }

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\lisandan\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\lisandan\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_JFighter-master.1893976293.00" t="ExcludeRecursive" />
+    <e p="C:\Users\lisandan\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lisandan\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_JFighter-master.1893976293.00" t="ExcludeRecursive" />
     <e p="C:\Users\lisandan\Desktop\自做项目\unityLearn\JFighter-master" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="Old" t="Include">
           <e p="Assets" t="Include">
             <e p="EnemyArcher" t="Include">
@@ -181,23 +195,22 @@
             <e p="Enums.cs" t="Include" />
           </e>
           <e p="Controller" t="Include">
-            <e p="BtnCotroller.cs" t="Include" />
+            <e p="AnimationController.cs" t="Include" />
+            <e p="AudioController.cs" t="Include" />
+            <e p="BtnController.cs" t="Include" />
+            <e p="InputController.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
           </e>
           <e p="manager" t="Include">
             <e p="GameManager.cs" t="Include" />
-            <e p="UIManager.cs" t="Include" />
           </e>
           <e p="test.cs" t="Include" />
         </e>
       </e>
       <e p="JFighter-master.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

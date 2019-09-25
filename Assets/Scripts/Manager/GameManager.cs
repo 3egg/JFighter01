@@ -1,48 +1,35 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Const;
+using Controller;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private UIManager uiManager;
-    private BtnCotroller btnCotroller;
+    private AnimationController _animationController;
+    private UiController _uiController;
+    private BtnController _btnController;
+    private InputController _inputController;
 
     private void Awake()
     {
-        uiManager = gameObject.GetComponent<UIManager>();
-        btnCotroller = gameObject.GetComponent<BtnCotroller>();
+        _animationController = GetComponent<AnimationController>();
+        _uiController = GetComponent<UiController>();
+        _btnController = GetComponent<BtnController>();
+        _inputController = GetComponent<InputController>();
     }
 
-
-    void Start()
+    private void Start()
     {
-        //找到当前显示页面的buttons
-        btnCotroller.defaultBtnSelect();
-        uiManager.mainMenuButtonsAnimation(MainMenuAnimation.MainMenuButtonStart.ToString());
+        _animationController.mainMenuButtonsShowUp();
+        _uiController.currentUiIndex = 0;
+        _btnController.showSelectBtn(0);
     }
 
     private void Update()
     {
-        btnCotroller.escBack();
-        btnToRightOrLeft();
-        btnCotroller.pressEnther();
+        _inputController.pressEsc();
     }
-    
-
-    /**private method**/
-    private void btnToRightOrLeft()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            btnCotroller.btnToLeft();
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            btnCotroller.btnToRight();
-        }
-    }
-    
-    /**private method**/
 }
