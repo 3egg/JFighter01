@@ -21,5 +21,6 @@ namespace Const
         UiButtons,   
         StartGame,
         MainMenu,
+        NewGameWarning,
     }
 }

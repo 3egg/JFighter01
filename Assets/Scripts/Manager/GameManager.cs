@@ -25,11 +25,14 @@ public class GameManager : MonoBehaviour
     {
         _animationController.mainMenuButtonsShowUp();
         _uiController.currentUiIndex = 0;
-        _btnController.showSelectBtn(0);
+        _btnController.getCurrentUiButtons();
+        _btnController.currentBtnIndex = 0;
     }
 
     private void Update()
     {
         _inputController.pressEsc();
+        _inputController.pressABtnToLeft();
+        _inputController.pressDBtnToRight();
     }
 }

@@ -7,11 +7,13 @@ namespace Controller
     {
         private UiController _uiController;
         private AnimationController _animationController;
+        private BtnController _btnController;
 
         private void Awake()
         {
             _uiController = FindObjectOfType<UiController>();
             _animationController = FindObjectOfType<AnimationController>();
+            _btnController = FindObjectOfType<BtnController>();
         }
 
         public void pressEsc()
@@ -21,7 +23,30 @@ namespace Controller
                 _uiController.currentUiIndex--;
                 //播放这个ui的退出动画
                 string animationName = _uiController.escUi[_uiController.currentUiIndex].name;
-                _animationController.Invoke("esc" + animationName, 0);
+                _animationController.Invoke("escTo" + animationName, 0);
+                _btnController.showNewUiButton();
+            }
+        }
+
+        public void pressABtnToLeft()
+        {
+            if (!Input.GetKeyDown(KeyCode.A)) return;
+            var length = _btnController.currentUiBtns.Length;
+            _btnController.currentBtnIndex--;
+            if (_btnController.currentBtnIndex < 0)
+            {
+                _btnController.currentBtnIndex = length - 1;
+            }
+        }
+
+        public void pressDBtnToRight()
+        {
+            if (!Input.GetKeyDown(KeyCode.D)) return;
+            var length = _btnController.currentUiBtns.Length;
+            _btnController.currentBtnIndex++;
+            if (_btnController.currentBtnIndex > length - 1)
+            {
+                _btnController.currentBtnIndex = 0;
             }
         }
     }

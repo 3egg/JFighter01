@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -126,12 +126,84 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1343128994}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &206996173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1074498575270764, guid: 3eaf3ae7ed962ad489a3889d92f6c878,
+    type: 3}
+  m_PrefabInstance: {fileID: 818999860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &206996178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206996173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!224 &321758178 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224288996806163302, guid: 3eaf3ae7ed962ad489a3889d92f6c878,
     type: 3}
   m_PrefabInstance: {fileID: 818999860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &431368644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1928865716024972, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343128994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &431368645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431368644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1001 &464358857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519455706703672, guid: 29d3451c89e7dad4681633ad8a20fa16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224532039725015420, guid: 29d3451c89e7dad4681633ad8a20fa16,
         type: 3}
@@ -205,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 224532039725015420, guid: 29d3451c89e7dad4681633ad8a20fa16,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1668
       objectReference: {fileID: 0}
     - target: {fileID: 224532039725015420, guid: 29d3451c89e7dad4681633ad8a20fa16,
         type: 3}
@@ -252,7 +324,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114972890728915726, guid: 29d3451c89e7dad4681633ad8a20fa16, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 29d3451c89e7dad4681633ad8a20fa16, type: 3}
 --- !u!224 &464358858 stripped
 RectTransform:
@@ -260,6 +333,42 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 464358857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &525238365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1049265675492572, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343128994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &525238366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525238365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!224 &626216557 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224717827835709776, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
@@ -5024,6 +5133,42 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &701094910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1333852400434348, guid: 29d3451c89e7dad4681633ad8a20fa16,
+    type: 3}
+  m_PrefabInstance: {fileID: 464358857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701094911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701094910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5455,6 +5600,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &967773763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1628276915336236, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343128994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &967773764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967773763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1093645062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1096137355529512, guid: 3eaf3ae7ed962ad489a3889d92f6c878,
+    type: 3}
+  m_PrefabInstance: {fileID: 818999860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093645067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093645062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1208470308
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,6 +5893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartGame
       objectReference: {fileID: 0}
+    - target: {fileID: 224382324453922706, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 246.70001
+      objectReference: {fileID: 0}
     - target: {fileID: 224379481478551404, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5781,14 +6003,144 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224382324453922706, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 246.70001
-      objectReference: {fileID: 0}
     - target: {fileID: 1047811170124270, guid: 6c6ad3486d7f26147b48d65ea7f16f85, type: 3}
       propertyPath: m_Name
       value: StartGameButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1654194545}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: clickStartLevelGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544741668692866, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583740681447934, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583740681447934, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583740681447934, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583740681447934, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1654194545}
+    - target: {fileID: 114583740681447934, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: clickStartLevelGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583740681447934, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1654194545}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: clickStartLevelGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485014478004664, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1654194545}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: clickStartLevelGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664636434715714, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c6ad3486d7f26147b48d65ea7f16f85, type: 3}
@@ -5833,6 +6185,114 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1597136453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1641970384023016, guid: 29d3451c89e7dad4681633ad8a20fa16,
+    type: 3}
+  m_PrefabInstance: {fileID: 464358857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1597136454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597136453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1618245805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1029229349969232, guid: 3eaf3ae7ed962ad489a3889d92f6c878,
+    type: 3}
+  m_PrefabInstance: {fileID: 818999860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1618245810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618245805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1630074065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1205040760828624, guid: 6c6ad3486d7f26147b48d65ea7f16f85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343128994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1630074066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630074065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1654194543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5956,6 +6416,42 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 818999860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1838615309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1675733098348388, guid: 3eaf3ae7ed962ad489a3889d92f6c878,
+    type: 3}
+  m_PrefabInstance: {fileID: 818999860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1838615314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838615309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1654194545}
+          m_MethodName: setCurrentUiBtnIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &2013910450
 GameObject:
   m_ObjectHideFlags: 0
