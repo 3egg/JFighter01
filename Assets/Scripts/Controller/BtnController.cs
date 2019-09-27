@@ -97,7 +97,7 @@ namespace Controller
         {
             disableOrEnableBtns(false);
             getCurrentUiButtons();
-            currentBtnIndex = 0;
+            currentBtnIndex = 0; 
         }
 
         /**ui function**/
