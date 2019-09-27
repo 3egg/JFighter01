@@ -67,7 +67,15 @@ namespace Controller
             startGameButtons.DOLocalMoveX(0, 1, true); //0
         }
 
-        public void escMainMenu()
+        public void newGameWarningShowUp()
+        {
+            startGameTitle.DOKill();
+            newGameWarning.DOKill();
+            startGameTitle.DOLocalMoveX(-1919, 1, true); //-960,-19,0
+            newGameWarning.DOLocalMove(Vector3.zero, 1, true);
+        }
+
+        public void escToMainMenu()
         {
             mainMenuButtonsShowUp();
             mainMenuGameNameShowBack();
@@ -77,6 +85,13 @@ namespace Controller
             startGameTitle.DOLocalMoveX(-1919, 1, true); //-960,-19,0
             startGameButtonBg.DOScaleY(0, 1); //scaley1
             startGameButtons.DOLocalMoveX(_animationNormalMap[startGameButtons.name].x, 1, true); //0
+        }
+
+        public void escToStartGame()
+        {
+            startGameTitle.DOKill();
+            startGameTitle.DOLocalMoveX(-960, 1, true); //-960,-19,0
+            newGameWarning.DOLocalMove(_animationNormalMap[newGameWarning.name], 1, true);
         }
 
 
