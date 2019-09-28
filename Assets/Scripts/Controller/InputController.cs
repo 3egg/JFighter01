@@ -8,12 +8,14 @@ namespace Controller
         private UiController _uiController;
         private AnimationController _animationController;
         private BtnController _btnController;
+        private AudioController _audioController;
 
         private void Awake()
         {
             _uiController = FindObjectOfType<UiController>();
             _animationController = FindObjectOfType<AnimationController>();
             _btnController = FindObjectOfType<BtnController>();
+            _audioController = FindObjectOfType<AudioController>();
         }
 
         public void pressEsc()
@@ -23,6 +25,7 @@ namespace Controller
                 _uiController.currentUiIndex--;
                 //播放这个ui的退出动画
                 string animationName = _uiController.escUi[_uiController.currentUiIndex].name;
+                _audioController.playUiOut();
                 _animationController.Invoke("escTo" + animationName, 0);
                 _btnController.showNewUiButton();
             }

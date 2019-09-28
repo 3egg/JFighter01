@@ -9,6 +9,9 @@ namespace Controller
 {
     public class BtnController : MonoBehaviour
     {
+        private UiController _uiController;
+        private AnimationController _animationController;
+        private AudioController _audioController;
         private int tempBtnIndex;
 
         [HideInInspector]
@@ -39,14 +42,11 @@ namespace Controller
                 button.GetComponent<Image>().DOColor(Color.white, 0);
             }
         }
-
-        private UiController _uiController;
-        private AnimationController _animationController;
-
         private void Awake()
         {
             _uiController = FindObjectOfType<UiController>();
             _animationController = FindObjectOfType<AnimationController>();
+            _audioController = FindObjectOfType<AudioController>();
         }
 
         public Button[] getCurrentUiButtons()
@@ -64,10 +64,11 @@ namespace Controller
                 btn.enabled = isEnable;
             }
         }
-        
+
         /**ui function**/
         public void clickStartGame()
         {
+            _audioController.playUiIn();
             killCurrentUiBtnEffect();
             //把uiController显示StartGame
             _uiController.currentUiIndex = _uiController.escUi.IndexOf(_uiController.escUi
@@ -80,6 +81,7 @@ namespace Controller
 
         public void clickStartLevelGame(int index)
         {
+            _audioController.playUiIn();
             killCurrentUiBtnEffect();
             _uiController.currentUiIndex = _uiController.escUi.IndexOf(_uiController.escUi
                 .Where(ui => ui.name.Equals(UiConstant.NewGameWarning.ToString())).ToArray()[0]);
@@ -92,12 +94,12 @@ namespace Controller
         {
             print("level index: " + index);
         }
-        
+
         public void showNewUiButton()
         {
             disableOrEnableBtns(false);
             getCurrentUiButtons();
-            currentBtnIndex = 0; 
+            currentBtnIndex = 0;
         }
 
         /**ui function**/

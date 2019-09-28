@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private UiController _uiController;
     private BtnController _btnController;
     private InputController _inputController;
+    private AudioController _audioController;
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
         _uiController = GetComponent<UiController>();
         _btnController = GetComponent<BtnController>();
         _inputController = GetComponent<InputController>();
+        _audioController = GetComponent<AudioController>();
     }
 
     private void Start()
@@ -27,6 +29,8 @@ public class GameManager : MonoBehaviour
         _uiController.currentUiIndex = 0;
         _btnController.getCurrentUiButtons();
         _btnController.currentBtnIndex = 0;
+        
+        _audioController.playUiBg();
     }
 
     private void Update()
