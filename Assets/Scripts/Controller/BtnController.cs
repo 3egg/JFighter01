@@ -12,12 +12,17 @@ namespace Controller
         private UiController _uiController;
         private AnimationController _animationController;
         private AudioController _audioController;
-        private int tempBtnIndex;
+        private InputController _inputController;
+        private LoadSceneController _loadSceneController;
+        private LevelController _levelController;
+        private int _tempBtnIndex;
+
+        private int _tempLevelIndex;
 
         [HideInInspector]
         public int currentBtnIndex
         {
-            get => tempBtnIndex;
+            get => _tempBtnIndex;
             set => setCurrentUiBtnIndex(value);
         }
 
@@ -26,7 +31,7 @@ namespace Controller
 
         public void setCurrentUiBtnIndex(int value)
         {
-            tempBtnIndex = value;
+            _tempBtnIndex = value;
             killCurrentUiBtnEffect();
 
             currentBtn = currentUiBtns[value];
@@ -42,11 +47,15 @@ namespace Controller
                 button.GetComponent<Image>().DOColor(Color.white, 0);
             }
         }
+
         private void Awake()
         {
             _uiController = FindObjectOfType<UiController>();
             _animationController = FindObjectOfType<AnimationController>();
             _audioController = FindObjectOfType<AudioController>();
+            _inputController = FindObjectOfType<InputController>();
+            _loadSceneController = FindObjectOfType<LoadSceneController>();
+            _levelController = FindObjectOfType<LevelController>();
         }
 
         public Button[] getCurrentUiButtons()
@@ -90,9 +99,57 @@ namespace Controller
             sendLevenIndex(index);
         }
 
+        public void clickYes()
+        {
+            switch (_tempBtnIndex)
+            {
+                case 0:
+                    //继续游戏,显示lading场景
+                    continueGame();
+                    break;
+                case 1:
+                    //选中了newGameWarning里面的yes
+                    startNewGame();
+                    _levelController.levelDifficult = LevelDifficult.Easy;
+                    break;
+                case 2:
+                    //选中了newGameWarning里面的yes
+                    startNewGame();
+                    _levelController.levelDifficult = LevelDifficult.Normal;
+                    break;
+                case 3:
+                    //选中了newGameWarning里面的yes
+                    startNewGame();
+                    _levelController.levelDifficult = LevelDifficult.Hard;
+                    break;
+                default:
+                    Debug.LogError("can not load scene with level index = -1");
+                    break;
+            }
+
+            StartCoroutine(_loadSceneController.loadSceneAsync(""));
+            _loadSceneController.allowSwitchScene();
+        }
+
+        private void continueGame()
+        {
+            
+        }
+
+        public void startNewGame()
+        {
+            
+        }
+
+        public void clickNo()
+        {
+            _tempLevelIndex = -1;
+            _inputController.pressEsc();
+        }
+
         private void sendLevenIndex(int index)
         {
-            print("level index: " + index);
+            _tempLevelIndex = index;
         }
 
         public void showNewUiButton()

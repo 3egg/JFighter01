@@ -192,6 +192,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Constant" t="Include">
+            <e p="Constant.cs" t="Include" />
             <e p="Enums.cs" t="Include" />
           </e>
           <e p="Controller" t="Include">
@@ -199,12 +200,17 @@
             <e p="AudioController.cs" t="Include" />
             <e p="BtnController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
+            <e p="LevelController.cs" t="Include" />
+            <e p="LoadSceneController.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
           </e>
           <e p="manager" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="test.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="SingletonUtil.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="JFighter-master.sln" t="IncludeFlat" />

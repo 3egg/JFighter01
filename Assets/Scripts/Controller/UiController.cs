@@ -9,6 +9,7 @@ namespace Controller
         [SerializeField] private Transform mainMenu;
         [SerializeField] private Transform startGame;
         [SerializeField] private Transform newGameWarning;
+        [SerializeField] private Transform loadingPicture;
         [HideInInspector] public int currentUiIndex;
         [HideInInspector] public List<Transform> escUi = new List<Transform>();
 
