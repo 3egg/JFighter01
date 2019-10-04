@@ -22,11 +22,17 @@ namespace Controller
             _operation.allowSceneActivation = true;
         }
 
-        public IEnumerator loadSceneAsync(string sceneName)
+        private IEnumerator loadSceneAsync(string sceneName)
         {
             _operation = SceneManager.LoadSceneAsync(sceneName);
             _operation.allowSceneActivation = false;
             yield return _operation;
         }
+
+        public void loadScene(string sceneName)
+        {
+            StartCoroutine(loadSceneAsync(sceneName));
+        }
+
     }
 }

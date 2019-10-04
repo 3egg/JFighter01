@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 2976436692076394269}
   - component: {fileID: 1992850108}
   - component: {fileID: 1992850107}
+  - component: {fileID: 686198610}
+  - component: {fileID: 686198611}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -64,6 +66,7 @@ MonoBehaviour:
   mainMenu: {fileID: 0}
   startGame: {fileID: 0}
   newGameWarning: {fileID: 0}
+  loadingPicture: {fileID: 0}
   currentUiIndex: 0
   escUi: []
 --- !u!114 &1654194546
@@ -124,7 +127,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -224,3 +227,27 @@ MonoBehaviour:
   uiOut: {fileID: 8300000, guid: 246ca1bc3d24444b0bf3e38ff7786544, type: 3}
   uiLogIn: {fileID: 8300000, guid: 8c9354276bfe74543ab4480cc8c0943c, type: 3}
   uiLogOut: {fileID: 8300000, guid: 246ca1bc3d24444b0bf3e38ff7786544, type: 3}
+--- !u!114 &686198610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812672492260662317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4574226e674a73b86867452264ba5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &686198611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812672492260662317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d7868d26d7445f8c0df3f48c5943b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -16,6 +16,16 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("GameController");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+        
+        
         _animationController = GetComponent<AnimationController>();
         _uiController = GetComponent<UiController>();
         _btnController = GetComponent<BtnController>();
@@ -31,6 +41,8 @@ public class GameManager : MonoBehaviour
         _btnController.currentBtnIndex = 0;
         
         _audioController.playUiBg();
+        
+        _uiController.ifLevelDifficultExist();
     }
 
     private void Update()

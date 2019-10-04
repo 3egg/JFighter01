@@ -18,7 +18,7 @@ namespace Const
 
     public enum UiConstant
     {
-        UiButtons,   
+        UiButtons,
         StartGame,
         MainMenu,
         NewGameWarning,
@@ -32,7 +32,7 @@ namespace Const
         Normal,
         Hard,
     }
-    
+
     public enum LevelGamePartID
     {
         ONE = 1,
@@ -46,6 +46,14 @@ namespace Const
     /// 关卡游戏部分小区域ID
     /// </summary>
     public enum LevelPartID
+    {
+        ONE = 1,
+        TWO
+    }
+
+    /// 关卡ID
+    /// </summary>
+    public enum LevelID
     {
         ONE = 1,
         TWO

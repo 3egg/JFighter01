@@ -9,6 +9,8 @@ namespace Controller
 {
     public class BtnController : MonoBehaviour
     {
+        public static BtnController instance { get; private set; } = new BtnController();
+
         private UiController _uiController;
         private AnimationController _animationController;
         private AudioController _audioController;
@@ -51,11 +53,17 @@ namespace Controller
         private void Awake()
         {
             _uiController = FindObjectOfType<UiController>();
+            instance._uiController = _uiController;
             _animationController = FindObjectOfType<AnimationController>();
+            instance._animationController = _animationController;
             _audioController = FindObjectOfType<AudioController>();
+            instance._audioController = _audioController;
             _inputController = FindObjectOfType<InputController>();
+            instance._inputController = _inputController;
             _loadSceneController = FindObjectOfType<LoadSceneController>();
+            instance._loadSceneController = _loadSceneController;
             _levelController = FindObjectOfType<LevelController>();
+            instance._levelController = _levelController;
         }
 
         public Button[] getCurrentUiButtons()
@@ -101,7 +109,7 @@ namespace Controller
 
         public void clickYes()
         {
-            switch (_tempBtnIndex)
+            switch (instance._tempLevelIndex)
             {
                 case 0:
                     //继续游戏,显示lading场景
@@ -110,46 +118,47 @@ namespace Controller
                 case 1:
                     //选中了newGameWarning里面的yes
                     startNewGame();
-                    _levelController.levelDifficult = LevelDifficult.Easy;
+                    instance._levelController.levelDifficult = LevelDifficult.Easy;
                     break;
                 case 2:
                     //选中了newGameWarning里面的yes
                     startNewGame();
-                    _levelController.levelDifficult = LevelDifficult.Normal;
+                    instance._levelController.levelDifficult = LevelDifficult.Normal;
                     break;
                 case 3:
                     //选中了newGameWarning里面的yes
                     startNewGame();
-                    _levelController.levelDifficult = LevelDifficult.Hard;
+                    instance._levelController.levelDifficult = LevelDifficult.Hard;
                     break;
                 default:
                     Debug.LogError("can not load scene with level index = -1");
                     break;
             }
-
-            StartCoroutine(_loadSceneController.loadSceneAsync(""));
-            _loadSceneController.allowSwitchScene();
+            instance._uiController.showOrHideLoadingPicture(true);
+            instance._loadSceneController.loadScene("02-Comics");
+            instance._loadSceneController.allowSwitchScene();
         }
 
-        private void continueGame()
+        public void continueGame()
         {
-            
+            //todo continue game
+            print("continue game to do...");
         }
 
-        public void startNewGame()
+        private void startNewGame()
         {
-            
+            print("start a new game with level: " + instance._tempLevelIndex);
         }
 
         public void clickNo()
         {
-            _tempLevelIndex = -1;
+            instance._tempLevelIndex = -1;
             _inputController.pressEsc();
         }
 
         private void sendLevenIndex(int index)
         {
-            _tempLevelIndex = index;
+            instance._tempLevelIndex = index;
         }
 
         public void showNewUiButton()
