@@ -1,10 +1,11 @@
 using System;
 using Const;
 using UnityEngine;
+using Utils;
 
 namespace Controller
 {
-    public class LevelController : MonoBehaviour
+    public class LevelController : SingletonUtil<LevelController>
     {
         public LevelDifficult levelDifficult
         {
@@ -22,11 +23,12 @@ namespace Controller
                 return level;
             }
         }
+
         public void ifLevelIndexExist(Transform trs)
         {
             trs.gameObject.SetActive(levelDifficult != LevelDifficult.None);
         }
-        
+
         /// <summary>
         /// 关卡数据标记 默认是1
         /// </summary>
@@ -36,9 +38,9 @@ namespace Controller
             {
                 if (value <= 0)
                     return;
-                PlayerPrefs.SetInt(Constant.LEVEL_INDEX,(int)value);
+                PlayerPrefs.SetInt(Constant.LEVEL_INDEX, (int) value);
             }
-            get { return (LevelID)PlayerPrefs.GetInt(Constant.LEVEL_INDEX, 1); }
+            get { return (LevelID) PlayerPrefs.GetInt(Constant.LEVEL_INDEX, 1); }
         }
 
         /// <summary>
@@ -50,9 +52,9 @@ namespace Controller
             {
                 if (value <= 0)
                     return;
-                PlayerPrefs.SetInt(Constant.LEVEL_GAME_PART_INDEX, (int)value);
+                PlayerPrefs.SetInt(Constant.LEVEL_GAME_PART_INDEX, (int) value);
             }
-            get { return (LevelGamePartID)PlayerPrefs.GetInt(Constant.LEVEL_GAME_PART_INDEX, 1); }
+            get { return (LevelGamePartID) PlayerPrefs.GetInt(Constant.LEVEL_GAME_PART_INDEX, 1); }
         }
 
         /// <summary>
@@ -64,9 +66,9 @@ namespace Controller
             {
                 if (value <= 0)
                     return;
-                PlayerPrefs.SetInt(Constant.LEVEL_PART_INDEX, (int)value);
+                PlayerPrefs.SetInt(Constant.LEVEL_PART_INDEX, (int) value);
             }
-            get { return (LevelPartID)PlayerPrefs.GetInt(Constant.LEVEL_PART_INDEX, 1); }
+            get { return (LevelPartID) PlayerPrefs.GetInt(Constant.LEVEL_PART_INDEX, 1); }
         }
 
         public void ResetData()
@@ -75,6 +77,5 @@ namespace Controller
             levelGamePartIndex = LevelGamePartID.ONE;
             levelPartIndex = LevelPartID.ONE;
         }
-        
     }
 }

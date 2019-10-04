@@ -58,4 +58,12 @@ namespace Const
         ONE = 1,
         TWO
     }
+
+
+    public enum ComicsParentId
+    {
+        LeftComics,
+        CurrentComics,
+        RightComics
+    }
 }

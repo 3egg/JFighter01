@@ -62,7 +62,7 @@ namespace Controller
             instance._inputController = _inputController;
             _loadSceneController = FindObjectOfType<LoadSceneController>();
             instance._loadSceneController = _loadSceneController;
-            _levelController = FindObjectOfType<LevelController>();
+            _levelController = LevelController.single;
             instance._levelController = _levelController;
         }
 

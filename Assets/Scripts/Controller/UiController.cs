@@ -22,7 +22,7 @@ namespace Controller
             escUi.Add(mainMenu);
             escUi.Add(startGame);
             escUi.Add(newGameWarning);
-            _levelController = FindObjectOfType<LevelController>();
+            _levelController = LevelController.single;
         }
 
         public Transform currentShowUi()
