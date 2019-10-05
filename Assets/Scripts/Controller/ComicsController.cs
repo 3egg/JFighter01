@@ -113,7 +113,12 @@ namespace Controller
             transform.AddBtnListener("Back", backToFirstPage);
             transform.AddBtnListener("Left", moveImageToRight);
             transform.AddBtnListener("Right", moveImageToLeft);
-            transform.AddBtnListener("Done", () => { });
+            transform.AddBtnListener("Done", () =>
+            {
+                var loadSceneController = FindObjectOfType<LoadSceneController>();
+                loadSceneController.loadScene("03-Level_01");
+                loadSceneController.allowSwitchScene();
+            });
         }
 
         //找到parent底下名字叫做 LeftComics,CurrentComics,RightComics的物体
