@@ -13,17 +13,17 @@ public class GameManager : MonoBehaviour
     private BtnController _btnController;
     private InputController _inputController;
     private AudioController _audioController;
-
+    private LevelController _levelController;
     private void Awake()
     {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("GameController");
+        /*GameObject[] objs = GameObject.FindGameObjectsWithTag("GameController");
 
         if (objs.Length > 1)
         {
             Destroy(this.gameObject);
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);*/
         
         
         _animationController = GetComponent<AnimationController>();
@@ -31,18 +31,21 @@ public class GameManager : MonoBehaviour
         _btnController = GetComponent<BtnController>();
         _inputController = GetComponent<InputController>();
         _audioController = GetComponent<AudioController>();
+        _levelController = LevelController.single;
     }
 
     private void Start()
     {
         _animationController.mainMenuButtonsShowUp();
         _uiController.currentUiIndex = 0;
-        _btnController.getCurrentUiButtons();
+        Button[] uiButtons = _btnController.getCurrentUiButtons();
+        print(uiButtons);
         _btnController.currentBtnIndex = 0;
         
         _audioController.playUiBg();
         
         _uiController.ifLevelDifficultExist();
+        
     }
 
     private void Update()

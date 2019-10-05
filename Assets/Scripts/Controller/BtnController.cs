@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Const;
 using DG.Tweening;
@@ -35,10 +36,23 @@ namespace Controller
         {
             _tempBtnIndex = value;
             killCurrentUiBtnEffect();
-
             currentBtn = currentUiBtns[value];
             currentBtn.GetComponent<Image>().DOColor(new Color32(154, 170, 255, 255), 1)
                 .SetLoops(-1, LoopType.Yoyo);
+        }
+
+        public void setStartGameBtnsSelect(string btnName)
+        {
+            List<Button> buttons = currentUiBtns.ToList();
+            Button button = buttons.Find(btn => btn.name.Equals(btnName));
+            if (button != null)
+            {
+                _tempBtnIndex = buttons.IndexOf(button);
+                killCurrentUiBtnEffect();
+                currentBtn = button;
+                currentBtn.GetComponent<Image>().DOColor(new Color32(154, 170, 255, 255), 1)
+                    .SetLoops(-1, LoopType.Yoyo);
+            }
         }
 
         private void killCurrentUiBtnEffect()
@@ -134,6 +148,12 @@ namespace Controller
                     Debug.LogError("can not load scene with level index = -1");
                     break;
             }
+
+            loadScene();
+        }
+
+        private void loadScene()
+        {
             instance._uiController.showOrHideLoadingPicture(true);
             instance._loadSceneController.loadScene("02-Comics");
             instance._loadSceneController.allowSwitchScene();
@@ -141,7 +161,7 @@ namespace Controller
 
         public void continueGame()
         {
-            //todo continue game
+            loadScene();
             print("continue game to do...");
         }
 

@@ -14,7 +14,7 @@ namespace Controller
         [SerializeField] private Transform continueBtn;
         [HideInInspector] public int currentUiIndex;
         [HideInInspector] public List<Transform> escUi = new List<Transform>();
-        private LevelController _levelController;
+        private LevelController levelController;
 
 
         private void Awake()
@@ -22,7 +22,7 @@ namespace Controller
             escUi.Add(mainMenu);
             escUi.Add(startGame);
             escUi.Add(newGameWarning);
-            _levelController = LevelController.single;
+            levelController = LevelController.single;
         }
 
         public Transform currentShowUi()
@@ -37,7 +37,7 @@ namespace Controller
 
         public void ifLevelDifficultExist()
         {
-            _levelController.ifLevelIndexExist(continueBtn);
+            levelController.ifLevelIndexExist(continueBtn);
         }
     }
 }

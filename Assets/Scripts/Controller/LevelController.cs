@@ -71,7 +71,7 @@ namespace Controller
             get { return (LevelPartID) PlayerPrefs.GetInt(Constant.LEVEL_PART_INDEX, 1); }
         }
 
-        public void ResetData()
+        public void resetData()
         {
             levelIndex = LevelID.ONE;
             levelGamePartIndex = LevelGamePartID.ONE;

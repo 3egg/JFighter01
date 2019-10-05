@@ -192,14 +192,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1654194545}
-          m_MethodName: setCurrentUiBtnIndex
-          m_Mode: 3
+          m_MethodName: setStartGameBtnsSelect
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 3
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Hard
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
@@ -419,14 +419,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1654194545}
-          m_MethodName: setCurrentUiBtnIndex
-          m_Mode: 3
+          m_MethodName: setStartGameBtnsSelect
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
+            m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Normal
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
@@ -5686,14 +5686,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1654194545}
-          m_MethodName: setCurrentUiBtnIndex
-          m_Mode: 3
+          m_MethodName: setStartGameBtnsSelect
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Easy
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
@@ -6334,7 +6334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1205040760828624, guid: 6c6ad3486d7f26147b48d65ea7f16f85, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c6ad3486d7f26147b48d65ea7f16f85, type: 3}
@@ -6475,14 +6475,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1654194545}
-          m_MethodName: setCurrentUiBtnIndex
-          m_Mode: 3
+          m_MethodName: setStartGameBtnsSelect
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Continue
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
@@ -6609,7 +6609,8 @@ PrefabInstance:
       propertyPath: newGameWarning
       value: 
       objectReference: {fileID: 464358858}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 686198611, guid: 3f111e6bae8e4414098dc1470bec5d05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f111e6bae8e4414098dc1470bec5d05, type: 3}
 --- !u!114 &1654194545 stripped
 MonoBehaviour:
