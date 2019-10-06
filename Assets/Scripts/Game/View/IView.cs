@@ -1,7 +1,9 @@
-﻿namespace Game.View
+﻿using Entitas;
+using UnityEngine;
+namespace Game.View
 {
-    public interface IView
+    public interface IView 
     {
-        void Init();
+        void init();
     }
 }

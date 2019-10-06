@@ -8,15 +8,18 @@
 //------------------------------------------------------------------------------
 public static class InputComponentsLookup {
 
+    public const int GameComponentInputButton = 0;
+    public const int GameComponentInputButtonListener = 1;
 
-
-    public const int TotalComponents = 0;
+    public const int TotalComponents = 2;
 
     public static readonly string[] componentNames = {
-
+        "GameComponentInputButton",
+        "GameComponentInputButtonListener"
     };
 
     public static readonly System.Type[] componentTypes = {
-
+        typeof(Game.Component.InputButtonComponent),
+        typeof(GameComponentInputButtonListenerComponent)
     };
 }

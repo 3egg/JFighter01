@@ -7,13 +7,12 @@ namespace Game.Feature
     {
         public ViewFeature(Contexts contexts) : base("View")
         {
-            Init();
+            init(contexts);
         }
 
-        private void Init()
+        private void init(Contexts contexts)
         {
-            Add(new InitViewSystem());
+            Add(new InitViewSystem(contexts));
         }
-        
     }
 }
