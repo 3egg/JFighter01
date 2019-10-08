@@ -1,4 +1,5 @@
 ﻿using Game.Enums;
+using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
 
 namespace Game.Service
@@ -6,6 +7,8 @@ namespace Game.Service
     public interface IInputService
     {
         void init(Contexts contexts);
+
+        void update();
         void up();
         void down();
         void right();
@@ -13,10 +16,11 @@ namespace Game.Service
 
         //攻击 K
         void attackO();
+
         //攻击 L
         void attackX();
     }
-    
+
 
     /// <summary>
     /// 与entitas交互的输入服务
@@ -24,10 +28,15 @@ namespace Game.Service
     public class EntitasInputService : IInputService
     {
         private Contexts contexts;
+
         public void init(Contexts contexts)
         {
             this.contexts = contexts;
             contexts.input.SetGameComponentInputButton(InputButtn.NULL);
+        }
+
+        public void update()
+        {
         }
 
         public void up()
@@ -66,42 +75,73 @@ namespace Game.Service
     /// </summary>
     public class UnityInputService : IInputService
     {
+        private IInputService entitasInputService;
+
         //帧函数
+        public void update()
+        {
+            up();
+            down();
+            left();
+            right();
+            attackO();
+            attackX();
+        }
+
         //unity的input事件
         //获取EntitasInputService
         public void init(Contexts contexts)
         {
-            
+            entitasInputService = contexts.game.gameComponentEntitasInputService.entitasInputServiceComponent;
         }
+
 
         public void up()
         {
-            
+            if (Input.GetKey(KeyCode.W))
+            {
+                entitasInputService.up();
+            }
         }
 
         public void down()
         {
-            
+            if (Input.GetKey(KeyCode.S))
+            {
+                entitasInputService.down();
+            }
         }
 
         public void right()
         {
-            
+            if (Input.GetKey(KeyCode.D))
+            {
+                entitasInputService.right();
+            }
         }
 
         public void left()
         {
-            
+            if (Input.GetKey(KeyCode.A))
+            {
+                entitasInputService.left();
+            }
         }
 
         public void attackO()
         {
-            
+            if (Input.GetKey(KeyCode.K))
+            {
+                entitasInputService.attackO();
+            }
         }
 
         public void attackX()
         {
-            
+            if (Input.GetKey(KeyCode.L))
+            {
+                entitasInputService.attackX();
+            }
         }
     }
 }

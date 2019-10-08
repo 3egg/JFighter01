@@ -7,7 +7,8 @@ namespace Game.Feature
     {
         public ServiceFeature(Contexts contexts, Services services) : base("InitService")
         {
-            Add(new InitServices(contexts, services));
+            Add(new InitServicesSystem(contexts, services));
+            Add(new ExcuteServicesSystem(contexts, services));
         }
     }
 }

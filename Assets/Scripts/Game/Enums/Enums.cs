@@ -5,8 +5,7 @@
     /// </summary>
     public enum CameraAnimationName
     {
-        START_GAME_ANI,//开场相机动画
-        
+        START_GAME_ANI, //开场相机动画
     }
 
     /// <summary>
@@ -17,6 +16,7 @@
         START,
         IN_GAME
     }
+
     /// <summary>
     /// 输入按钮
     /// </summary>
@@ -30,5 +30,14 @@
         ATTACK_O,
         ATTACK_X,
     }
-    
+
+    /// <summary>
+    /// 游戏状态
+    /// </summary>
+    public enum GameState
+    {
+        START,
+        PAUSE,
+        END
+    }
 }

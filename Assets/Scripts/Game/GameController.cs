@@ -13,7 +13,8 @@ namespace Game
         // Start is called before the first frame update
         void Start()
         {
-            var services = new Services(new FindObjectService(),new EntitasInputService());
+            var services = new Services(new FindObjectService(), new EntitasInputService(), new UnityInputService(),
+                new LogService(), new LoadService());
             _systems = new InitFeature(Contexts.sharedInstance, services);
             _systems.Initialize();
         }

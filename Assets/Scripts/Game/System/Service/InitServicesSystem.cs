@@ -7,11 +7,11 @@ namespace Game.System.Service
     /// <summary>
     /// 初始化服务系统
     /// </summary>
-    public class InitServices : IInitializeSystem
+    public class InitServicesSystem : IInitializeSystem
     {
         private Contexts contexts;
         private Services services;
-        public InitServices(Contexts contexts,Services services)
+        public InitServicesSystem(Contexts contexts,Services services)
         {
             this.contexts = contexts;
             this.services = services;
@@ -19,8 +19,15 @@ namespace Game.System.Service
         
         public void Initialize()
         {
-            services.inputService.init(contexts); 
             initUniqueComponent(contexts, services);
+            
+            initServices(contexts, services);
+        }
+
+        private void initServices(Contexts contexts, Services services)
+        {
+            services.unityInputService.init(contexts); 
+            services.entitasInputService.init(contexts); 
         }
         
         /// <summary>
@@ -31,7 +38,9 @@ namespace Game.System.Service
         private void initUniqueComponent(Contexts contexts, Services services)
         {
             contexts.game.SetGameComponentFindObjectService(services.findObjectService);
-            contexts.game.SetGameComponentInputService(services.inputService);
+            contexts.game.SetGameComponentEntitasInputService(services.entitasInputService);
+            contexts.game.SetGameComponentLogService(services.logService);
+            contexts.game.SetGameComponentLoadService(services.loadService);
         }
     }
 }

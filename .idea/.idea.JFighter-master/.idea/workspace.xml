@@ -24,25 +24,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c410f63-5906-4adb-a899-d381df7e62b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/02-Comics.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/02-Comics.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/LoadSceneController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/LoadSceneController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/SingletonUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/SingletonUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentEntitasInputServiceComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentEntitasInputServiceComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentLoadServiceComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentLoadServiceComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentLogServiceComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentLogServiceComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Old/cn.yahoo.asxhl2007/BasicDialog/Test/BasicDialogTest.apk.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/LogService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/LogService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/ExcuteServicesSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01-Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01-Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constant/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constant/Enums.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/BtnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/BtnController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Contexts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Contexts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Components/GameComponentCameraStateListenerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/GameComponentCameraStateListenerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Components/GameComponentInputButtonListenerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components/GameComponentInputButtonListenerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/GameEventSystems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/InputEventSystems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/InputEventSystems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IGameComponentCameraStateListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IGameComponentCameraStateListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IGameComponentInputButtonListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces/IGameComponentInputButtonListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Systems/GameComponentCameraStateEventSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/GameComponentCameraStateEventSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Events/Systems/GameComponentInputButtonEventSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems/GameComponentInputButtonEventSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Feature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Feature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentCameraStateComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentCameraStateComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentCameraStateListenerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentCameraStateListenerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentFindObjectServiceComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentFindObjectServiceComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentInputServiceComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentInputServiceComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameMatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameMatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/Components/InputGameComponentInputButtonComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/Components/InputGameComponentInputButtonComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/Components/InputGameComponentInputButtonListenerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/Components/InputGameComponentInputButtonListenerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputMatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputMatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Comics/02.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Component/ServiceComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Component/ServiceComponents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/ServiceFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/ServiceFeature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Service/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/Services.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServicesSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServices.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServicesSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/LoadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/LoadManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,28 +89,56 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Old/cn.yahoo.asxhl2007/Splash/Script/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Contexts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/01-Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Feature/ServiceFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/FindObjectService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Feature/InitFeature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Component/ServiceComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentEntitasInputServiceComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Component/InputComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constant/Enums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F37B2CA-7BC0-4094-93C9-29A81891A481/be/ae7c036b/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/01-Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/LogService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4379FCB5-FFCD-422A-BDAB-E963856EF063/28/cbd204eb/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/BtnController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SingletonUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Old/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServicesSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Service/ExcuteServicesSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SingletonUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.0.8/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Demigiant.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Old/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B990C8BD-D7DC-490E-A7C4-855C1172CA9B/02/16951f79/Systems.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Old/cn.yahoo.asxhl2007/Splash/Script/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/Services.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4379FCB5-FFCD-422A-BDAB-E963856EF063/28/cbd204eb/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/IFindObjectService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/LoadSceneController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constant/Enums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,6 +165,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BtnController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/ExcuteServicesSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Feature/ServiceFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentInputServiceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/LogService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentEntitasInputServiceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/Services.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Component/ServiceComponents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServicesSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/LoadManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" />
       </list>
     </option>
   </component>
@@ -140,10 +224,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16980">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="10092">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16980" />
+      <option name="pid" value="10092" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -170,6 +254,7 @@
       <workItem from="1569417692986" duration="5812000" />
       <workItem from="1569636373668" duration="2867000" />
       <workItem from="1569765301467" duration="3630000" />
+      <workItem from="1570536725811" duration="7056000" />
     </task>
     <task id="LOCAL-00001" summary="add music">
       <created>1569638029988</created>
@@ -189,6 +274,30 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="range">
+                    <value>
+                      <list>
+                        <option value="HEAD..origin/entitas" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>

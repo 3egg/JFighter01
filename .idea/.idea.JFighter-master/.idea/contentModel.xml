@@ -20,6 +20,58 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="DesperateDevs" t="Include">
+          <e p="Compile.cs" t="Include" />
+        </e>
+        <e p="Entitas" t="Include">
+          <e p="Entitas.xml" t="Include" />
+        </e>
+        <e p="Generated" t="Include">
+          <e p="Contexts.cs" t="Include" />
+          <e p="Events" t="Include">
+            <e p="Components" t="Include">
+              <e p="GameComponentCameraStateListenerComponent.cs" t="Include" />
+              <e p="GameComponentInputButtonListenerComponent.cs" t="Include" />
+            </e>
+            <e p="GameEventSystems.cs" t="Include" />
+            <e p="InputEventSystems.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="IGameComponentCameraStateListener.cs" t="Include" />
+              <e p="IGameComponentInputButtonListener.cs" t="Include" />
+            </e>
+            <e p="Systems" t="Include">
+              <e p="GameComponentCameraStateEventSystem.cs" t="Include" />
+              <e p="GameComponentInputButtonEventSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Feature.cs" t="Include" />
+          <e p="Game" t="Include">
+            <e p="Components" t="Include">
+              <e p="GameGameComponentCameraStateComponent.cs" t="Include" />
+              <e p="GameGameComponentCameraStateListenerComponent.cs" t="Include" />
+              <e p="GameGameComponentEntitasInputServiceComponent.cs" t="Include" />
+              <e p="GameGameComponentFindObjectServiceComponent.cs" t="Include" />
+              <e p="GameGameComponentLoadServiceComponent.cs" t="Include" />
+              <e p="GameGameComponentLogServiceComponent.cs" t="Include" />
+            </e>
+            <e p="GameAttribute.cs" t="Include" />
+            <e p="GameComponentsLookup.cs" t="Include" />
+            <e p="GameContext.cs" t="Include" />
+            <e p="GameEntity.cs" t="Include" />
+            <e p="GameMatcher.cs" t="Include" />
+          </e>
+          <e p="Input" t="Include">
+            <e p="Components" t="Include">
+              <e p="InputGameComponentInputButtonComponent.cs" t="Include" />
+              <e p="InputGameComponentInputButtonListenerComponent.cs" t="Include" />
+            </e>
+            <e p="InputAttribute.cs" t="Include" />
+            <e p="InputComponentsLookup.cs" t="Include" />
+            <e p="InputContext.cs" t="Include" />
+            <e p="InputEntity.cs" t="Include" />
+            <e p="InputMatcher.cs" t="Include" />
+          </e>
+        </e>
         <e p="Old" t="Include">
           <e p="Assets" t="Include">
             <e p="EnemyArcher" t="Include">
@@ -199,19 +251,71 @@
             <e p="AnimationController.cs" t="Include" />
             <e p="AudioController.cs" t="Include" />
             <e p="BtnController.cs" t="Include" />
+            <e p="ComicsController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="LevelController.cs" t="Include" />
             <e p="LoadSceneController.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
           </e>
+          <e p="Game" t="Include">
+            <e p="Component" t="Include">
+              <e p="GameComponents.cs" t="Include" />
+              <e p="InputComponents.cs" t="Include" />
+              <e p="ServiceComponents.cs" t="Include" />
+            </e>
+            <e p="Enums" t="Include">
+              <e p="Enums.cs" t="Include" />
+            </e>
+            <e p="Feature" t="Include">
+              <e p="InitFeature.cs" t="Include" />
+              <e p="ServiceFeature.cs" t="Include" />
+              <e p="SystemFeature.cs" t="Include" />
+              <e p="ViewFeature.cs" t="Include" />
+            </e>
+            <e p="GameController.cs" t="Include" />
+            <e p="Service" t="Include">
+              <e p="FindObjectService.cs" t="Include" />
+              <e p="IFindObjectService.cs" t="Include" />
+              <e p="InputService.cs" t="Include" />
+              <e p="LoadService.cs" t="Include" />
+              <e p="LogService.cs" t="Include" />
+              <e p="Services.cs" t="Include" />
+              <e p="ViewBase.cs" t="Include" />
+            </e>
+            <e p="system" t="Include">
+              <e p="Input" t="Include">
+                <e p="InputButtonSystemBase.cs" t="Include" />
+                <e p="InputHumanControlSystem.cs" t="Include" />
+              </e>
+              <e p="Service" t="Include">
+                <e p="ExcuteServicesSystem.cs" t="Include" />
+                <e p="InitServicesSystem.cs" t="Include" />
+              </e>
+              <e p="View" t="Include">
+                <e p="InitViewSystem.cs" t="Include" />
+              </e>
+            </e>
+            <e p="View" t="Include">
+              <e p="CameraController.cs" t="Include" />
+              <e p="CameraMove.cs" t="Include" />
+              <e p="IView.cs" t="Include" />
+            </e>
+          </e>
           <e p="manager" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="LoadManager.cs" t="Include" />
+          </e>
+          <e p="model" t="Include">
+            <e p="ComicsPage.cs" t="Include" />
+            <e p="ComisItem.cs" t="Include" />
           </e>
           <e p="test.cs" t="Include" />
           <e p="Utils" t="Include">
+            <e p="ExtendUtils.cs" t="Include" />
             <e p="SingletonUtil.cs" t="Include" />
           </e>
         </e>
+        <e p="Third-Party Notices.txt" t="Include" />
       </e>
       <e p="JFighter-master.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

@@ -3,7 +3,14 @@ using Utils;
 
 namespace Manager
 {
-    public class LoadManager : SingletonUtil<LoadManager>
+    public interface ILoad
+    {
+        T load<T>(string path, string name) where T : class;
+        GameObject loadAndInstaniate(string path, Transform parent);
+        T[] loadAll<T>(string path) where T : Object;
+    }
+
+    public class LoadManager : SingletonUtil<LoadManager>, ILoad
     {
         public T load<T>(string path, string name) where T : class
         {

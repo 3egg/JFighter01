@@ -14,6 +14,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
+            contexts.game.gameComponentLogService.logService.log("attackO");
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -33,6 +34,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
+            contexts.game.gameComponentLogService.logService.log("attackX");
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -52,6 +54,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
+            contexts.game.gameComponentLogService.logService.log("down");
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -71,6 +74,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
+            contexts.game.gameComponentLogService.logService.log("left");
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -90,6 +94,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
+            contexts.game.gameComponentLogService.logService.log("right");
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -109,6 +114,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
+            contexts.game.gameComponentLogService.logService.log("up");
         }
 
         protected override bool filterCondition(InputEntity entity)
