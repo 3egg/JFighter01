@@ -1,9 +1,10 @@
-﻿using Game.View;
+﻿using Entitas;
+using Game.View;
 using UnityEngine;
 namespace Game.Service
 {
-    public abstract class ViewBase : MonoBehaviour,IView
+    public abstract class ViewService : MonoBehaviour,IView
     {
-        public abstract void init();
+        public abstract void init(Contexts contexts,IEntity entity);
     }
 }

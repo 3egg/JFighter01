@@ -51,8 +51,10 @@
               <e p="GameGameComponentCameraStateListenerComponent.cs" t="Include" />
               <e p="GameGameComponentEntitasInputServiceComponent.cs" t="Include" />
               <e p="GameGameComponentFindObjectServiceComponent.cs" t="Include" />
+              <e p="GameGameComponentGameStateComponent.cs" t="Include" />
               <e p="GameGameComponentLoadServiceComponent.cs" t="Include" />
               <e p="GameGameComponentLogServiceComponent.cs" t="Include" />
+              <e p="GameGameComponentPlayerComponent.cs" t="Include" />
             </e>
             <e p="GameAttribute.cs" t="Include" />
             <e p="GameComponentsLookup.cs" t="Include" />
@@ -265,24 +267,33 @@
             </e>
             <e p="Enums" t="Include">
               <e p="Enums.cs" t="Include" />
+              <e p="Path.cs" t="Include" />
             </e>
             <e p="Feature" t="Include">
+              <e p="GameFeature.cs" t="Include" />
               <e p="InitFeature.cs" t="Include" />
               <e p="ServiceFeature.cs" t="Include" />
               <e p="SystemFeature.cs" t="Include" />
               <e p="ViewFeature.cs" t="Include" />
             </e>
             <e p="GameController.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="BehaviourService.cs" t="Include" />
+            </e>
             <e p="Service" t="Include">
               <e p="FindObjectService.cs" t="Include" />
               <e p="IFindObjectService.cs" t="Include" />
               <e p="InputService.cs" t="Include" />
               <e p="LoadService.cs" t="Include" />
               <e p="LogService.cs" t="Include" />
+              <e p="PlayerService.cs" t="Include" />
               <e p="Services.cs" t="Include" />
               <e p="ViewBase.cs" t="Include" />
             </e>
             <e p="system" t="Include">
+              <e p="Game" t="Include">
+                <e p="GameStateSystemBase.cs" t="Include" />
+              </e>
               <e p="Input" t="Include">
                 <e p="InputButtonSystemBase.cs" t="Include" />
                 <e p="InputHumanControlSystem.cs" t="Include" />
@@ -299,10 +310,12 @@
               <e p="CameraController.cs" t="Include" />
               <e p="CameraMove.cs" t="Include" />
               <e p="IView.cs" t="Include" />
+              <e p="PlayerView.cs" t="Include" />
             </e>
           </e>
           <e p="manager" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="GameParentManager.cs" t="Include" />
             <e p="LoadManager.cs" t="Include" />
           </e>
           <e p="model" t="Include">

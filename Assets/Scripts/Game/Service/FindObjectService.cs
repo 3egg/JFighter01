@@ -21,7 +21,7 @@ namespace Game.Service
 
         public IView[] findAllIView()
         {
-           return findAllType<ViewBase>();
+           return findAllType<ViewService>();
         }
 
     }

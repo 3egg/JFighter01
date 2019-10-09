@@ -1,24 +1,16 @@
 ﻿using Game.Enums;
+using Game.interfaces;
 using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
 
 namespace Game.Service
 {
-    public interface IInputService
+    public interface IInputService : IPlayerBehaviour
     {
         void init(Contexts contexts);
 
         void update();
-        void up();
-        void down();
-        void right();
-        void left();
-
-        //攻击 K
-        void attackO();
-
-        //攻击 L
-        void attackX();
+        
     }
 
 

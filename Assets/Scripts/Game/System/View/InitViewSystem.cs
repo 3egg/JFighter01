@@ -19,11 +19,11 @@ namespace Game.System.View
         
         public void Initialize()
         {
-            var views = _contexts.game.gameComponentFindObjectService.findObjectService.findAllIView();
+            /*var views = _contexts.game.gameComponentFindObjectService.findObjectService.findAllIView();
             foreach (var view in views)
             {
                 view.init();
-            }
+            }*/
         }
     }
 }

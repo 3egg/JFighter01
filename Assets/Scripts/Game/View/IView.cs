@@ -4,6 +4,6 @@ namespace Game.View
 {
     public interface IView 
     {
-        void init();
+        void init(Contexts contexts,IEntity entity);
     }
 }

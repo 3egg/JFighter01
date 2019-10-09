@@ -1,6 +1,8 @@
 ﻿using Entitas;
 using Entitas.CodeGeneration.Attributes;
 using Game.Enums;
+using Game.interfaces;
+using Game.Service;
 
 namespace Game.Component
 {
@@ -21,5 +23,11 @@ namespace Game.Component
     public class GameStateComponent : IComponent
     {
         public GameState gameState;
+    }
+
+    [Game, Unique]
+    public class PlayerComponent : IComponent
+    {
+        public IPlayerBehaviour behaviour;
     }
 }

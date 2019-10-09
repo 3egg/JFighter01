@@ -14,7 +14,7 @@ namespace Game.View
     /// <summary>
     /// 相机控制监听
     /// </summary>
-    public class CameraController : ViewBase, IGameComponentCameraStateListener
+    public class CameraController : ViewService, IGameComponentCameraStateListener
     {
         private Dictionary<CameraParent, Transform> _parentDic;
         private CameraMove _cameraMove;
@@ -77,16 +77,13 @@ namespace Game.View
         }
 
         //Entitas的数据载体,相当于把整个controller上面的物体交给entitas管理
-        public override void init()
+        public override void init(Contexts contexts, IEntity iEntity)
         {
             initParentDic();
             initCamera();
 
-            GameEntity entity =
-                Contexts.sharedInstance.game.SetGameComponentCameraState(CameraAnimationName.START_GAME_ANI);
-            gameObject.Link(entity);
-            //相当于外部就知道了
-            entity.AddGameComponentCameraStateListener(this);
+            gameObject.Link(iEntity);
+           ((GameEntity) iEntity).AddGameComponentCameraStateListener(this);
             // 进入游戏时,相机位置初始化,开场动画,判断数据
         }
 
