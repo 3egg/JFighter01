@@ -276,6 +276,9 @@
               <e p="SystemFeature.cs" t="Include" />
               <e p="ViewFeature.cs" t="Include" />
             </e>
+            <e p="Function" t="Include">
+              <e p="PlayerBehaviour.cs" t="Include" />
+            </e>
             <e p="GameController.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="BehaviourService.cs" t="Include" />
@@ -314,13 +317,16 @@
             </e>
           </e>
           <e p="manager" t="Include">
+            <e p="ConfigManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="GameParentManager.cs" t="Include" />
             <e p="LoadManager.cs" t="Include" />
+            <e p="ModelManager.cs" t="Include" />
           </e>
           <e p="model" t="Include">
             <e p="ComicsPage.cs" t="Include" />
             <e p="ComisItem.cs" t="Include" />
+            <e p="PlayerDataModel.cs" t="Include" />
           </e>
           <e p="test.cs" t="Include" />
           <e p="Utils" t="Include">

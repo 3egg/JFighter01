@@ -5,9 +5,10 @@ using NotImplementedException = System.NotImplementedException;
 
 namespace Game.System.Game
 {
-    public abstract class GameStateSystemBase :  ReactiveSystem<GameEntity>
+    public abstract class GameStateSystemBase : ReactiveSystem<GameEntity>
     {
         protected Contexts contexts;
+
         public GameStateSystemBase(Contexts context) : base(context.game)
         {
             this.contexts = context;
@@ -24,9 +25,8 @@ namespace Game.System.Game
         }
 
         protected abstract bool filterCondition(GameEntity entity);
-
     }
-    
+
     public class GameStartSystem : GameStateSystemBase
     {
         public GameStartSystem(Contexts context) : base(context)
@@ -35,7 +35,8 @@ namespace Game.System.Game
 
         protected override void Execute(List<GameEntity> entities)
         {
-            var playerBehaviour = contexts.game.gameComponentLoadService.loadService.loadPlayer();
+            contexts.game.gameComponentLoadService.loadService.loadPlayer();
+            contexts.game.ReplaceGameComponentCameraState(CameraAnimationName.START_GAME_ANI);
         }
 
         protected override bool filterCondition(GameEntity entity)
@@ -43,7 +44,7 @@ namespace Game.System.Game
             return entity.gameComponentGameState.gameState == GameState.START;
         }
     }
-    
+
     public class GamePauseSystem : GameStateSystemBase
     {
         public GamePauseSystem(Contexts context) : base(context)
@@ -60,7 +61,7 @@ namespace Game.System.Game
             return entity.gameComponentGameState.gameState == GameState.PAUSE;
         }
     }
-    
+
     public class GameEndSystem : GameStateSystemBase
     {
         public GameEndSystem(Contexts context) : base(context)

@@ -19,15 +19,16 @@ namespace Game
         // Start is called before the first frame update
         void Start()
         {
+            contexts = Contexts.sharedInstance;
             initManager();
             var services = new Services(new FindObjectService(), new EntitasInputService(), new UnityInputService(),
                 new LogService(), new LoadService(parentManager));
             _systems = new InitFeature(Contexts.sharedInstance, services);
             _systems.Initialize();
-            contexts = Contexts.sharedInstance;
             Contexts.sharedInstance.game.SetGameComponentGameState(GameState.START);
         }
 
+        
         private void initManager()
         {
             parentManager = transform.GetOrAddComponent<GameParentManager>();
@@ -37,8 +38,10 @@ namespace Game
             var cameraController = parentManager.getParentTrans(ParentName.CameraController);
             var controller = cameraController.gameObject.AddComponent<CameraController>();
             var entity = contexts.game.CreateEntity();
-            entity.AddGameComponentCameraState(CameraAnimationName.START_GAME_ANI);
+            entity.AddGameComponentCameraState(CameraAnimationName.NULL);
             controller.init(contexts, entity);
+            
+            ModelManager.single.init();
         }
 
         // Update is called once per frame

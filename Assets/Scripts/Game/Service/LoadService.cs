@@ -1,7 +1,9 @@
 using Game.Enums;
+using Game.Function;
 using Game.interfaces;
 using Game.View;
 using Manager;
+using model;
 using UnityEngine;
 using NotImplementedException = System.NotImplementedException;
 
@@ -12,7 +14,7 @@ namespace Game.Service
     /// </summary>
     public interface ILoadService : ILoad
     {
-        IPlayerBehaviour loadPlayer();
+        void loadPlayer();
     }
 
     public class LoadService : ILoadService
@@ -24,14 +26,14 @@ namespace Game.Service
             this.gameParentManager = gameParentManager;
         }
 
-        public IPlayerBehaviour loadPlayer()
+        public void loadPlayer()
         {
             var player = loadAndInstaniate(Path.PLAYER_PREFAB, gameParentManager.getParentTrans(ParentName.PlayerRoot));
             var view = player.AddComponent<PlayerView>();
+            IPlayerBehaviour playerBehaviour = new PlayerBehaviour(player.transform,ModelManager.single.playerDataModel);
             var gameEntity = Contexts.sharedInstance.game.CreateEntity();
-            gameEntity.AddGameComponentPlayer(view);
+            gameEntity.AddGameComponentPlayer(view, playerBehaviour);
             view.init(Contexts.sharedInstance, gameEntity);
-            return view;
         }
 
         public T load<T>(string path, string name) where T : class

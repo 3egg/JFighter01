@@ -24,38 +24,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c410f63-5906-4adb-a899-d381df7e62b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentPlayerComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentPlayerComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Path.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Path.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/GameFeature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/GameFeature.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/PlayerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/PlayerService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Game.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/interfaces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/interfaces/BehaviourService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/interfaces/BehaviourService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameParentManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameParentManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Function.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Function/PlayerBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Function/PlayerBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ConfigManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ConfigManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ModelManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ModelManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/model/PlayerDataModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/model/PlayerDataModel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/GameComponentsLookup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/03-Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/03-Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentPlayerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentPlayerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/InitFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/InitFeature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Service/FindObjectService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/FindObjectService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Service/ViewBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Service/ViewBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/System/View/InitViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/View/InitViewSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/View/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/View/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/View/IView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/View/IView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/interfaces/BehaviourService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/interfaces/BehaviourService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Player.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Player.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +97,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F37B2CA-7BC0-4094-93C9-29A81891A481/be/ae7c036b/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/LogService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Function/PlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/View/InitViewSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -112,11 +105,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentPlayerComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentGameStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ModelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Old/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServicesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Feature/GameFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Service/ExcuteServicesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Service/ExcuteServicesSystem.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F37B2CA-7BC0-4094-93C9-29A81891A481/2c/273bdb6c/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/SingletonUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/View/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,12 +123,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Demigiant.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B990C8BD-D7DC-490E-A7C4-855C1172CA9B/02/16951f79/Systems.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/model/PlayerDataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Old/cn.yahoo.asxhl2007/Splash/Script/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/Services.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4379FCB5-FFCD-422A-BDAB-E963856EF063/28/cbd204eb/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/IFindObjectService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ConfigManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/LoadSceneController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -142,11 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI/manager/UILayerManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI/manager/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BtnCotroller.cs" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/AnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/InputController.cs" />
@@ -155,7 +147,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/LoadSceneController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Constant/Enums.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BtnController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" />
@@ -165,14 +156,12 @@
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentInputServiceComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServices.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/LogService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentEntitasInputServiceComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Feature/SystemFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/Services.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Component/ServiceComponents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Service/InitServicesSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/LoadManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Feature/InitFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Feature/GameFeature.cs" />
@@ -181,18 +170,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/PlayerService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/BehaviourService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/interface/BehaviourService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/interfaces/BehaviourService.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Game/Components/GameGameComponentPlayerComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/InputService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/View/IView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/ViewBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/View/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/View/InitViewSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/View/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/View/PlayerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Game/GameStateSystemBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/interfaces/BehaviourService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/Input/InputHumanControlSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/model/PlayerDataModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ConfigManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/StreamingAssets/Player.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Function/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Service/LoadService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/ModelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Enums/Enums.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Component/GameComponents.cs" />
       </list>
     </option>
   </component>
@@ -234,10 +231,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="10076">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="12176">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10076" />
+      <option name="pid" value="12176" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -265,7 +262,8 @@
       <workItem from="1569636373668" duration="2867000" />
       <workItem from="1569765301467" duration="3630000" />
       <workItem from="1570536725811" duration="7712000" />
-      <workItem from="1570622932334" duration="6628000" />
+      <workItem from="1570622932334" duration="7326000" />
+      <workItem from="1570709288976" duration="5367000" />
     </task>
     <task id="LOCAL-00001" summary="add music">
       <created>1569638029988</created>
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570545001070</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add more logic for player move">
+      <created>1570632884316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570632884316</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +343,8 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="add music" />
     <MESSAGE value="add human move interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="add human move interface" />
+    <MESSAGE value="add more logic for player move" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more logic for player move" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -347,6 +353,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Manager/ConfigManager.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Manager/ConfigManager.cs" initialLine="15">
+            <startOffsets>
+              <option value="287" />
+            </startOffsets>
+            <endOffsets>
+              <option value="327" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -46,15 +46,15 @@ namespace Game.System.Input
     /// <summary>
     /// 向上按键相应系统
     /// </summary>
-    public class InputDownButtonSystem : InputButtonSystemBase
+    public class InputBackButtonSystem : InputButtonSystemBase
     {
-        public InputDownButtonSystem(Contexts context) : base(context)
+        public InputBackButtonSystem(Contexts context) : base(context)
         {
         }
 
         protected override void Execute(List<InputEntity> entities)
         {
-            contexts.game.gameComponentLogService.logService.log("down");
+            contexts.game.gameComponentPlayer.behaviour.back();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -74,7 +74,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
-            contexts.game.gameComponentLogService.logService.log("left");
+            contexts.game.gameComponentPlayer.behaviour.left();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -94,7 +94,7 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
-            contexts.game.gameComponentLogService.logService.log("right");
+            contexts.game.gameComponentPlayer.behaviour.right();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -106,15 +106,15 @@ namespace Game.System.Input
     /// <summary>
     /// 向上按键相应系统
     /// </summary>
-    public class InputUpButtonSystem : InputButtonSystemBase
+    public class InputForwardButtonSystem : InputButtonSystemBase
     {
-        public InputUpButtonSystem(Contexts context) : base(context)
+        public InputForwardButtonSystem(Contexts context) : base(context)
         {
         }
 
         protected override void Execute(List<InputEntity> entities)
         {
-            contexts.game.gameComponentLogService.logService.log("up");
+            contexts.game.gameComponentPlayer.behaviour.forward();
         }
 
         protected override bool filterCondition(InputEntity entity)

@@ -5,6 +5,7 @@
     /// </summary>
     public enum CameraAnimationName
     {
+        NULL,
         START_GAME_ANI, //开场相机动画
     }
 
@@ -39,5 +40,15 @@
         START,
         PAUSE,
         END
+    }
+
+    /// <summary>
+    /// 人物动画参数对应枚举
+    /// </summary>
+    public enum PlayerAniIndex
+    {
+        IDLE,
+        RUN,
+        WALK
     }
 }

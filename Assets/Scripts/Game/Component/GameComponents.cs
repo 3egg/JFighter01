@@ -3,6 +3,7 @@ using Entitas.CodeGeneration.Attributes;
 using Game.Enums;
 using Game.interfaces;
 using Game.Service;
+using Game.View;
 
 namespace Game.Component
 {
@@ -28,6 +29,12 @@ namespace Game.Component
     [Game, Unique]
     public class PlayerComponent : IComponent
     {
+        public IView player;
         public IPlayerBehaviour behaviour;
+    }
+
+    public class PlayerAniState : IComponent
+    {
+        public PlayerAniIndex aniIndex;
     }
 }

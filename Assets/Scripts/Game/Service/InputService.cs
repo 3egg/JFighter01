@@ -31,12 +31,12 @@ namespace Game.Service
         {
         }
 
-        public void up()
+        public void forward()
         {
             contexts.input.ReplaceGameComponentInputButton(InputButtn.UP);
         }
 
-        public void down()
+        public void back()
         {
             contexts.input.ReplaceGameComponentInputButton(InputButtn.DOWN);
         }
@@ -72,8 +72,8 @@ namespace Game.Service
         //帧函数
         public void update()
         {
-            up();
-            down();
+            forward();
+            back();
             left();
             right();
             attackO();
@@ -88,19 +88,19 @@ namespace Game.Service
         }
 
 
-        public void up()
+        public void forward()
         {
             if (Input.GetKey(KeyCode.W))
             {
-                entitasInputService.up();
+                entitasInputService.forward();
             }
         }
 
-        public void down()
+        public void back()
         {
             if (Input.GetKey(KeyCode.S))
             {
-                entitasInputService.down();
+                entitasInputService.back();
             }
         }
 

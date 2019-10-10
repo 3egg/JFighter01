@@ -7,8 +7,8 @@ namespace Game.interfaces
     /// </summary>
     public interface IBehaviour
     {
-        void up();
-        void down();
+        void forward();
+        void back();
         void left();
         void right();
     }
