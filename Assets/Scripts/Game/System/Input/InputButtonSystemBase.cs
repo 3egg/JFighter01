@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Entitas;
+using Game.Component;
 using Game.Enums;
 using NotImplementedException = System.NotImplementedException;
 
@@ -24,8 +25,7 @@ namespace Game.System.Input
 
         protected override bool Filter(InputEntity entity)
         {
-            return entity.hasGameComponentInputButton &&
-                   entity.gameComponentInputButton.inputButton != InputButtn.NULL && filterCondition(entity);
+            return entity.hasGameComponentInputButton && filterCondition(entity);
         }
 
         /// <summary>

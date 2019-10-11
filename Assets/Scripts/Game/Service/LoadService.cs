@@ -5,6 +5,7 @@ using Game.View;
 using Manager;
 using model;
 using UnityEngine;
+using Utils;
 using NotImplementedException = System.NotImplementedException;
 
 namespace Game.Service
@@ -29,10 +30,21 @@ namespace Game.Service
         public void loadPlayer()
         {
             var player = loadAndInstaniate(Path.PLAYER_PREFAB, gameParentManager.getParentTrans(ParentName.PlayerRoot));
-            var view = player.AddComponent<PlayerView>();
+            IView view = player.AddComponent<PlayerView>();
             IPlayerBehaviour playerBehaviour = new PlayerBehaviour(player.transform,ModelManager.single.playerDataModel);
+            Animator animator = player.GetComponent<Animator>();
+            IPlayerAni playerAni = null;
+            if (animator == null)
+            {
+                Debug.LogError("player prefabs can not find animator");
+            }
+            else
+            {
+                playerAni = new PlayerAni(animator);
+            }
             var gameEntity = Contexts.sharedInstance.game.CreateEntity();
-            gameEntity.AddGameComponentPlayer(view, playerBehaviour);
+            gameEntity.AddGameComponentPlayer(view, playerBehaviour,playerAni);
+            gameEntity.AddGameComponentPlayerAniState(PlayerAniIndex.IDLE);
             view.init(Contexts.sharedInstance, gameEntity);
         }
 

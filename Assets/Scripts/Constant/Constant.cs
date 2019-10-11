@@ -13,5 +13,10 @@ namespace Const
         public const string COMICS__PATH = "Comics/";
 
         public static readonly string PLAYER_CONFIG = Application.streamingAssetsPath + "/Player.json";
+
+        /// <summary>
+        /// 玩家动画参数名称
+        /// </summary>
+        public const string PLAYER_PARA_NAME = "AniIndex";
     }
 }

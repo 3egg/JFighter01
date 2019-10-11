@@ -54,6 +54,7 @@
               <e p="GameGameComponentGameStateComponent.cs" t="Include" />
               <e p="GameGameComponentLoadServiceComponent.cs" t="Include" />
               <e p="GameGameComponentLogServiceComponent.cs" t="Include" />
+              <e p="GameGameComponentPlayerAniStateComponent.cs" t="Include" />
               <e p="GameGameComponentPlayerComponent.cs" t="Include" />
             </e>
             <e p="GameAttribute.cs" t="Include" />
@@ -277,10 +278,12 @@
               <e p="ViewFeature.cs" t="Include" />
             </e>
             <e p="Function" t="Include">
+              <e p="PlayerAni.cs" t="Include" />
               <e p="PlayerBehaviour.cs" t="Include" />
             </e>
             <e p="GameController.cs" t="Include" />
             <e p="Interfaces" t="Include">
+              <e p="AniInterface.cs" t="Include" />
               <e p="BehaviourService.cs" t="Include" />
             </e>
             <e p="Service" t="Include">
@@ -296,6 +299,7 @@
             <e p="system" t="Include">
               <e p="Game" t="Include">
                 <e p="GameStateSystemBase.cs" t="Include" />
+                <e p="PlayerAniStateSystem.cs" t="Include" />
               </e>
               <e p="Input" t="Include">
                 <e p="InputButtonSystemBase.cs" t="Include" />
@@ -327,6 +331,11 @@
             <e p="ComicsPage.cs" t="Include" />
             <e p="ComisItem.cs" t="Include" />
             <e p="PlayerDataModel.cs" t="Include" />
+          </e>
+          <e p="Module" t="Include">
+            <e p="Timer" t="Include">
+              <e p="Timer.cs" t="Include" />
+            </e>
           </e>
           <e p="test.cs" t="Include" />
           <e p="Utils" t="Include">

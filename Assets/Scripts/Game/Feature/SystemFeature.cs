@@ -11,6 +11,7 @@ namespace Game.Feature
 
         private void addInputSystem(Contexts contexts)
         {
+            Add(new InputNullSystem(contexts));
             Add(new InputForwardButtonSystem(contexts));
             Add(new InputBackButtonSystem(contexts));
             Add(new InputRightButtonSystem(contexts));

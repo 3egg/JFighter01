@@ -4,6 +4,29 @@ using Game.Enums;
 namespace Game.System.Input
 {
     /// <summary>
+    /// 没有按键按下的状态 
+    /// </summary>
+    public class InputNullSystem : InputButtonSystemBase
+    {
+        public InputNullSystem(Contexts context) : base(context)
+        {
+        }
+
+        protected override void Execute(List<InputEntity> entities)
+        {
+            if (contexts.game.hasGameComponentPlayer)
+            {
+                contexts.game.gameComponentPlayer.ani.idle();
+            }
+        }
+
+        protected override bool filterCondition(InputEntity entity)
+        {
+            return entity.gameComponentInputButton.inputButton == InputButtn.NULL;
+        }
+    }
+    
+    /// <summary>
     /// 向上按键相应系统
     /// </summary>
     public class InputAttackOButtonSystem : InputButtonSystemBase
@@ -14,7 +37,8 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
-            contexts.game.gameComponentLogService.logService.log("attackO");
+            contexts.game.gameComponentPlayer.behaviour.attackO();
+            contexts.game.gameComponentPlayer.ani.attackO();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -34,7 +58,8 @@ namespace Game.System.Input
 
         protected override void Execute(List<InputEntity> entities)
         {
-            contexts.game.gameComponentLogService.logService.log("attackX");
+            contexts.game.gameComponentPlayer.behaviour.attackX();
+            contexts.game.gameComponentPlayer.ani.attackX();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -55,6 +80,7 @@ namespace Game.System.Input
         protected override void Execute(List<InputEntity> entities)
         {
             contexts.game.gameComponentPlayer.behaviour.back();
+            contexts.game.gameComponentPlayer.ani.back();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -75,6 +101,7 @@ namespace Game.System.Input
         protected override void Execute(List<InputEntity> entities)
         {
             contexts.game.gameComponentPlayer.behaviour.left();
+            contexts.game.gameComponentPlayer.ani.left();
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -95,6 +122,8 @@ namespace Game.System.Input
         protected override void Execute(List<InputEntity> entities)
         {
             contexts.game.gameComponentPlayer.behaviour.right();
+            contexts.game.gameComponentPlayer.ani.right();
+            
         }
 
         protected override bool filterCondition(InputEntity entity)
@@ -115,6 +144,7 @@ namespace Game.System.Input
         protected override void Execute(List<InputEntity> entities)
         {
             contexts.game.gameComponentPlayer.behaviour.forward();
+            contexts.game.gameComponentPlayer.ani.forward();
         }
 
         protected override bool filterCondition(InputEntity entity)

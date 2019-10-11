@@ -20,6 +20,11 @@ namespace Game.Function
             this.model = model;
         }
 
+        public void idle()
+        {
+            
+        }
+
         public void forward()
         {
             move(model.speed, Vector3.forward);

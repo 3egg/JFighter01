@@ -31,6 +31,11 @@ namespace Game.Service
         {
         }
 
+        public void idle()
+        {
+            contexts.input.ReplaceGameComponentInputButton(InputButtn.NULL);
+        }
+
         public void forward()
         {
             contexts.input.ReplaceGameComponentInputButton(InputButtn.UP);
@@ -68,17 +73,21 @@ namespace Game.Service
     public class UnityInputService : IInputService
     {
         private IInputService entitasInputService;
+        private bool isPress;
 
         //帧函数
         public void update()
         {
+            isPress = false;
             forward();
             back();
             left();
             right();
             attackO();
             attackX();
+            idle();
         }
+        
 
         //unity的input事件
         //获取EntitasInputService
@@ -88,11 +97,20 @@ namespace Game.Service
         }
 
 
+        public void idle()
+        {
+            if (!isPress)
+            {
+                entitasInputService.idle();
+            }
+        }
+
         public void forward()
         {
             if (Input.GetKey(KeyCode.W))
             {
                 entitasInputService.forward();
+                isPress = true;
             }
         }
 
@@ -101,6 +119,7 @@ namespace Game.Service
             if (Input.GetKey(KeyCode.S))
             {
                 entitasInputService.back();
+                isPress = true;
             }
         }
 
@@ -109,6 +128,7 @@ namespace Game.Service
             if (Input.GetKey(KeyCode.D))
             {
                 entitasInputService.right();
+                isPress = true;
             }
         }
 
@@ -117,6 +137,7 @@ namespace Game.Service
             if (Input.GetKey(KeyCode.A))
             {
                 entitasInputService.left();
+                isPress = true;
             }
         }
 
@@ -125,6 +146,7 @@ namespace Game.Service
             if (Input.GetKey(KeyCode.K))
             {
                 entitasInputService.attackO();
+                isPress = true;
             }
         }
 
@@ -133,6 +155,7 @@ namespace Game.Service
             if (Input.GetKey(KeyCode.L))
             {
                 entitasInputService.attackX();
+                isPress = true;
             }
         }
     }

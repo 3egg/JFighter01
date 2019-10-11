@@ -12,22 +12,22 @@ public partial class GameContext {
     public Game.Component.PlayerComponent gameComponentPlayer { get { return gameComponentPlayerEntity.gameComponentPlayer; } }
     public bool hasGameComponentPlayer { get { return gameComponentPlayerEntity != null; } }
 
-    public GameEntity SetGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour) {
+    public GameEntity SetGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour, Game.interfaces.IPlayerAni newAni) {
         if (hasGameComponentPlayer) {
             throw new Entitas.EntitasException("Could not set GameComponentPlayer!\n" + this + " already has an entity with Game.Component.PlayerComponent!",
                 "You should check if the context already has a gameComponentPlayerEntity before setting it or use context.ReplaceGameComponentPlayer().");
         }
         var entity = CreateEntity();
-        entity.AddGameComponentPlayer(newPlayer, newBehaviour);
+        entity.AddGameComponentPlayer(newPlayer, newBehaviour, newAni);
         return entity;
     }
 
-    public void ReplaceGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour) {
+    public void ReplaceGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour, Game.interfaces.IPlayerAni newAni) {
         var entity = gameComponentPlayerEntity;
         if (entity == null) {
-            entity = SetGameComponentPlayer(newPlayer, newBehaviour);
+            entity = SetGameComponentPlayer(newPlayer, newBehaviour, newAni);
         } else {
-            entity.ReplaceGameComponentPlayer(newPlayer, newBehaviour);
+            entity.ReplaceGameComponentPlayer(newPlayer, newBehaviour, newAni);
         }
     }
 
@@ -49,19 +49,21 @@ public partial class GameEntity {
     public Game.Component.PlayerComponent gameComponentPlayer { get { return (Game.Component.PlayerComponent)GetComponent(GameComponentsLookup.GameComponentPlayer); } }
     public bool hasGameComponentPlayer { get { return HasComponent(GameComponentsLookup.GameComponentPlayer); } }
 
-    public void AddGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour) {
+    public void AddGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour, Game.interfaces.IPlayerAni newAni) {
         var index = GameComponentsLookup.GameComponentPlayer;
         var component = (Game.Component.PlayerComponent)CreateComponent(index, typeof(Game.Component.PlayerComponent));
         component.player = newPlayer;
         component.behaviour = newBehaviour;
+        component.ani = newAni;
         AddComponent(index, component);
     }
 
-    public void ReplaceGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour) {
+    public void ReplaceGameComponentPlayer(Game.View.IView newPlayer, Game.interfaces.IPlayerBehaviour newBehaviour, Game.interfaces.IPlayerAni newAni) {
         var index = GameComponentsLookup.GameComponentPlayer;
         var component = (Game.Component.PlayerComponent)CreateComponent(index, typeof(Game.Component.PlayerComponent));
         component.player = newPlayer;
         component.behaviour = newBehaviour;
+        component.ani = newAni;
         ReplaceComponent(index, component);
     }
 

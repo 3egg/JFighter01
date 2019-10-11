@@ -31,8 +31,13 @@ namespace Game.Component
     {
         public IView player;
         public IPlayerBehaviour behaviour;
+        //动画接口,查找服务
+        public IPlayerAni ani;
     }
 
+    /// <summary>
+    /// 玩家动画
+    /// </summary>
     public class PlayerAniState : IComponent
     {
         public PlayerAniIndex aniIndex;
