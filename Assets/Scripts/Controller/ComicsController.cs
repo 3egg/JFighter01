@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Const;
 using Manager;
-using model;
+using Model;
 using UnityEngine;
 using Utils;
 

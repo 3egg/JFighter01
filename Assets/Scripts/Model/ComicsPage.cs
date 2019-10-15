@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Utils;
 
-namespace model
+namespace Model
 {
     public class ComicsPage : MonoBehaviour
     {

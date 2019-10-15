@@ -2,7 +2,7 @@
 using UnityEngine;
 using Utils;
 
-namespace model
+namespace Model
 {
     public class ComicsItem : MonoBehaviour
     {

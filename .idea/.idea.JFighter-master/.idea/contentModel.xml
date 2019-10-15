@@ -20,6 +20,12 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="DesperateDevs" t="Include">
+          <e p="Compile.cs" t="Include" />
+        </e>
+        <e p="Entitas" t="Include">
+          <e p="Entitas.xml" t="Include" />
+        </e>
         <e p="Old" t="Include">
           <e p="Assets" t="Include">
             <e p="EnemyArcher" t="Include">
@@ -199,19 +205,30 @@
             <e p="AnimationController.cs" t="Include" />
             <e p="AudioController.cs" t="Include" />
             <e p="BtnController.cs" t="Include" />
+            <e p="ComicsController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="LevelController.cs" t="Include" />
             <e p="LoadSceneController.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
           </e>
+          <e p="Game" t="Include">
+            <e p="GameController.cs" t="Include" />
+          </e>
           <e p="manager" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="LoadManager.cs" t="Include" />
+          </e>
+          <e p="model" t="Include">
+            <e p="ComicsPage.cs" t="Include" />
+            <e p="ComisItem.cs" t="Include" />
           </e>
           <e p="test.cs" t="Include" />
           <e p="Utils" t="Include">
+            <e p="ExtendUtils.cs" t="Include" />
             <e p="SingletonUtil.cs" t="Include" />
           </e>
         </e>
+        <e p="Third-Party Notices.txt" t="Include" />
       </e>
       <e p="JFighter-master.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
