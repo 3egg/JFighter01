@@ -13,7 +13,7 @@ namespace Game.Service
     /// <summary>
     /// 加载所有资源的服务接口
     /// </summary>
-    public interface ILoadService : ILoad
+    public interface ILoadService : ILoad,IService
     {
         void loadPlayer();
     }
@@ -61,6 +61,21 @@ namespace Game.Service
         public T[] loadAll<T>(string path) where T : Object
         {
             return LoadManager.single.loadAll<T>(path);
+        }
+
+        public void init(Contexts contexts)
+        {
+            contexts.game.SetGameComponentLoadService(this);
+        }
+
+        public void update()
+        {
+            
+        }
+
+        public int getPriority()
+        {
+            return 0;
         }
     }
 }

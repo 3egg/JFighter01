@@ -42,4 +42,6 @@ namespace Game.Component
     {
         public PlayerAniIndex aniIndex;
     }
+
+   
 }

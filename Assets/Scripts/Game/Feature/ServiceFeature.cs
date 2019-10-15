@@ -5,7 +5,7 @@ namespace Game.Feature
 {
     public class ServiceFeature : global::Feature
     {
-        public ServiceFeature(Contexts contexts, Services services) : base("InitService")
+        public ServiceFeature(Contexts contexts, ServicesManager services) : base("InitService")
         {
             Add(new InitServicesSystem(contexts, services));
             Add(new ExcuteServicesSystem(contexts, services));

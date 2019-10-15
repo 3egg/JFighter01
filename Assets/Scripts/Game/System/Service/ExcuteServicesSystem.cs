@@ -10,8 +10,8 @@ namespace Game.System.Service
     public class ExcuteServicesSystem : IExecuteSystem
     {
         private Contexts contexts;
-        private Services services;
-        public ExcuteServicesSystem(Contexts contexts,Services services)
+        private ServicesManager services;
+        public ExcuteServicesSystem(Contexts contexts,ServicesManager services)
         {
             this.contexts = contexts;
             this.services = services;

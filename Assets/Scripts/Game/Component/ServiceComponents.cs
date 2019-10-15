@@ -7,7 +7,7 @@ namespace Game.Component
     /// <summary>
     /// 查找服务的组件
     /// </summary>
-    [Game,Unique]
+    [Game, Unique]
     public class FindObjectServiceComponent : IComponent
     {
         public IFindObjectService findObjectService;
@@ -16,27 +16,33 @@ namespace Game.Component
     /// <summary>
     /// 输入服务的组件
     /// </summary>
-    [Game,Unique]
+    [Game, Unique]
     public class EntitasInputServiceComponent : IComponent
     {
         public IInputService entitasInputServiceComponent;
     }
-    
+
     /// <summary>
     /// 日志的组件
     /// </summary>
-    [Game,Unique]
+    [Game, Unique]
     public class LogServiceComponent : IComponent
     {
         public ILogService logService;
     }
-    
+
     /// <summary>
     /// 日志的组件
     /// </summary>
-    [Game,Unique]
+    [Game, Unique]
     public class LoadServiceComponent : IComponent
     {
         public ILoadService loadService;
+    }
+
+    [Game, Unique]
+    public class TimerServiceComponent : IComponent
+    {
+        public ITimerService timerService;
     }
 }

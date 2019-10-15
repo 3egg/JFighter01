@@ -5,12 +5,11 @@ using NotImplementedException = System.NotImplementedException;
 
 namespace Game.Service
 {
-    public interface IInputService : IPlayerBehaviour
+    public interface IInputService : IPlayerBehaviour, IService
     {
-        void init(Contexts contexts);
+        /*void init(Contexts contexts);
 
-        void update();
-        
+        void update();*/
     }
 
 
@@ -24,11 +23,18 @@ namespace Game.Service
         public void init(Contexts contexts)
         {
             this.contexts = contexts;
+            contexts.game.SetGameComponentEntitasInputService(this);
             contexts.input.SetGameComponentInputButton(InputButtn.NULL);
+            //contexts.game.SetGameComponentEntitasInputService(this);
         }
 
         public void update()
         {
+        }
+
+        public int getPriority()
+        {
+            return 0;
         }
 
         public void idle()
@@ -73,11 +79,17 @@ namespace Game.Service
     public class UnityInputService : IInputService
     {
         private IInputService entitasInputService;
+        private Contexts contexts;
         private bool isPress;
 
         //帧函数
         public void update()
         {
+            if (entitasInputService == null)
+            {
+                return;
+            }
+
             isPress = false;
             forward();
             back();
@@ -87,12 +99,20 @@ namespace Game.Service
             attackX();
             idle();
         }
-        
+
+        public int getPriority()
+        {
+            return 1;
+        }
+
 
         //unity的input事件
         //获取EntitasInputService
         public void init(Contexts contexts)
         {
+            //contexts.game.SetGameComponentEntitasInputService(this);
+            this.contexts = contexts;
+            contexts.game.ReplaceGameComponentEntitasInputService(this);
             entitasInputService = contexts.game.gameComponentEntitasInputService.entitasInputServiceComponent;
         }
 

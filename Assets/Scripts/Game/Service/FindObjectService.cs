@@ -1,5 +1,6 @@
 ﻿using Game.View;
 using UnityEngine;
+using NotImplementedException = System.NotImplementedException;
 
 namespace Game.Service
 {
@@ -24,5 +25,18 @@ namespace Game.Service
            return findAllType<ViewService>();
         }
 
+        public void init(Contexts contexts)
+        {
+            contexts.game.SetGameComponentFindObjectService(this);
+        }
+
+        public void update()
+        {
+        }
+
+        public int getPriority()
+        {
+            return 0;
+        }
     }
 }

@@ -56,6 +56,7 @@
               <e p="GameGameComponentLogServiceComponent.cs" t="Include" />
               <e p="GameGameComponentPlayerAniStateComponent.cs" t="Include" />
               <e p="GameGameComponentPlayerComponent.cs" t="Include" />
+              <e p="GameGameComponentTimerServiceComponent.cs" t="Include" />
             </e>
             <e p="GameAttribute.cs" t="Include" />
             <e p="GameComponentsLookup.cs" t="Include" />
@@ -290,10 +291,12 @@
               <e p="FindObjectService.cs" t="Include" />
               <e p="IFindObjectService.cs" t="Include" />
               <e p="InputService.cs" t="Include" />
+              <e p="IService.cs" t="Include" />
               <e p="LoadService.cs" t="Include" />
               <e p="LogService.cs" t="Include" />
               <e p="PlayerService.cs" t="Include" />
               <e p="Services.cs" t="Include" />
+              <e p="TimerService.cs" t="Include" />
               <e p="ViewBase.cs" t="Include" />
             </e>
             <e p="system" t="Include">

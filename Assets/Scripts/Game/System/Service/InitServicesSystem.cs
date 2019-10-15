@@ -10,8 +10,8 @@ namespace Game.System.Service
     public class InitServicesSystem : IInitializeSystem
     {
         private Contexts contexts;
-        private Services services;
-        public InitServicesSystem(Contexts contexts,Services services)
+        private ServicesManager services;
+        public InitServicesSystem(Contexts contexts,ServicesManager services)
         {
             this.contexts = contexts;
             this.services = services;
@@ -24,7 +24,7 @@ namespace Game.System.Service
             initServices(contexts, services);
         }
 
-        private void initServices(Contexts contexts, Services services)
+        private void initServices(Contexts contexts, ServicesManager services)
         {
             services.unityInputService.init(contexts); 
             services.entitasInputService.init(contexts); 
@@ -35,12 +35,12 @@ namespace Game.System.Service
         /// </summary>
         /// <param name="contexts"></param>
         /// <param name="services"></param>
-        private void initUniqueComponent(Contexts contexts, Services services)
+        private void initUniqueComponent(Contexts contexts, ServicesManager services)
         {
-            contexts.game.SetGameComponentFindObjectService(services.findObjectService);
-            contexts.game.SetGameComponentEntitasInputService(services.entitasInputService);
-            contexts.game.SetGameComponentLogService(services.logService);
-            contexts.game.SetGameComponentLoadService(services.loadService);
+            
+            //contexts.game.SetGameComponentEntitasInputService(services.entitasInputService);
+            //contexts.game.SetGameComponentLogService(services.logService);
+            //contexts.game.SetGameComponentLoadService(services.loadService);
         }
     }
 }
