@@ -26,6 +26,41 @@
         <e p="Entitas" t="Include">
           <e p="Entitas.xml" t="Include" />
         </e>
+        <e p="Generated" t="Include">
+          <e p="Contexts.cs" t="Include" />
+          <e p="Controller" t="Include">
+            <e p="ControllerAttribute.cs" t="Include" />
+            <e p="ControllerComponentsLookup.cs" t="Include" />
+            <e p="ControllerContext.cs" t="Include" />
+            <e p="ControllerEntity.cs" t="Include" />
+            <e p="ControllerMatcher.cs" t="Include" />
+          </e>
+          <e p="Feature.cs" t="Include" />
+          <e p="Input" t="Include">
+            <e p="InputAttribute.cs" t="Include" />
+            <e p="InputComponentsLookup.cs" t="Include" />
+            <e p="InputContext.cs" t="Include" />
+            <e p="InputEntity.cs" t="Include" />
+            <e p="InputMatcher.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Components" t="Include">
+              <e p="PlayerPlayerComponent.cs" t="Include" />
+            </e>
+            <e p="PlayerAttribute.cs" t="Include" />
+            <e p="PlayerComponentsLookup.cs" t="Include" />
+            <e p="PlayerContext.cs" t="Include" />
+            <e p="PlayerEntity.cs" t="Include" />
+            <e p="PlayerMatcher.cs" t="Include" />
+          </e>
+          <e p="system" t="Include">
+            <e p="SystemAttribute.cs" t="Include" />
+            <e p="SystemComponentsLookup.cs" t="Include" />
+            <e p="SystemContext.cs" t="Include" />
+            <e p="SystemEntity.cs" t="Include" />
+            <e p="SystemMatcher.cs" t="Include" />
+          </e>
+        </e>
         <e p="Old" t="Include">
           <e p="Assets" t="Include">
             <e p="EnemyArcher" t="Include">
@@ -212,7 +247,21 @@
             <e p="UiController.cs" t="Include" />
           </e>
           <e p="Game" t="Include">
+            <e p="Component" t="Include">
+              <e p="GameComponent.cs" t="Include" />
+            </e>
+            <e p="Enums" t="Include">
+              <e p="Constant.cs" t="Include" />
+              <e p="Enums.cs" t="Include" />
+            </e>
             <e p="GameController.cs" t="Include" />
+            <e p="GameControllerBehaviour.cs" t="Include" />
+            <e p="GameSystems.cs" t="Include" />
+            <e p="system" t="Include">
+              <e p="InitSystem.cs" t="Include" />
+              <e p="InputSystem.cs" t="Include" />
+              <e p="PlayerSystem.cs" t="Include" />
+            </e>
           </e>
           <e p="manager" t="Include">
             <e p="GameManager.cs" t="Include" />

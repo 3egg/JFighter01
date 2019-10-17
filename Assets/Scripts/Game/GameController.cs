@@ -1,29 +1,36 @@
 ﻿using System;
 using Entitas;
-using UnityEngine;
+
+/**
+ *
+ * The GameController creates and manages all systems in Match One
+ *
+ */
 
 namespace Game
 {
-    public class GameController : MonoBehaviour
+    public class GameController
     {
-        private Systems _systems;
+        readonly Systems _systems;
 
-        // Start is called before the first frame update
-        void Start()
+        public GameController(Contexts contexts)
         {
+            // This is the heart of Match One:
+            // All logic is contained in all the sub systems of GameSystems
+            _systems = new GameSystems(contexts);
+        }
+
+        public void Initialize()
+        {
+            // This calls Initialize() on all sub systems
             _systems.Initialize();
         }
 
-        // Update is called once per frame
-        void Update()
+        public void Execute()
         {
+            // This calls Execute() and Cleanup() on all sub systems
             _systems.Execute();
             _systems.Cleanup();
-        }
-
-        private void OnDestroy()
-        {
-            _systems.TearDown();
         }
     }
 }
