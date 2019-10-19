@@ -12,22 +12,22 @@ public partial class PlayerContext {
     public Game.Component.PlayerComponent player { get { return playerEntity.player; } }
     public bool hasPlayer { get { return playerEntity != null; } }
 
-    public PlayerEntity SetPlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer) {
+    public PlayerEntity SetPlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer, bool newIsPress) {
         if (hasPlayer) {
             throw new Entitas.EntitasException("Could not set Player!\n" + this + " already has an entity with Game.Component.PlayerComponent!",
                 "You should check if the context already has a playerEntity before setting it or use context.ReplacePlayer().");
         }
         var entity = CreateEntity();
-        entity.AddPlayer(newInputBtn, newPlayer);
+        entity.AddPlayer(newInputBtn, newPlayer, newIsPress);
         return entity;
     }
 
-    public void ReplacePlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer) {
+    public void ReplacePlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer, bool newIsPress) {
         var entity = playerEntity;
         if (entity == null) {
-            entity = SetPlayer(newInputBtn, newPlayer);
+            entity = SetPlayer(newInputBtn, newPlayer, newIsPress);
         } else {
-            entity.ReplacePlayer(newInputBtn, newPlayer);
+            entity.ReplacePlayer(newInputBtn, newPlayer, newIsPress);
         }
     }
 
@@ -49,19 +49,21 @@ public partial class PlayerEntity {
     public Game.Component.PlayerComponent player { get { return (Game.Component.PlayerComponent)GetComponent(PlayerComponentsLookup.Player); } }
     public bool hasPlayer { get { return HasComponent(PlayerComponentsLookup.Player); } }
 
-    public void AddPlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer) {
+    public void AddPlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer, bool newIsPress) {
         var index = PlayerComponentsLookup.Player;
         var component = (Game.Component.PlayerComponent)CreateComponent(index, typeof(Game.Component.PlayerComponent));
         component.inputBtn = newInputBtn;
         component.player = newPlayer;
+        component.isPress = newIsPress;
         AddComponent(index, component);
     }
 
-    public void ReplacePlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer) {
+    public void ReplacePlayer(Game.Enums.InputBtn newInputBtn, UnityEngine.Transform newPlayer, bool newIsPress) {
         var index = PlayerComponentsLookup.Player;
         var component = (Game.Component.PlayerComponent)CreateComponent(index, typeof(Game.Component.PlayerComponent));
         component.inputBtn = newInputBtn;
         component.player = newPlayer;
+        component.isPress = newIsPress;
         ReplaceComponent(index, component);
     }
 

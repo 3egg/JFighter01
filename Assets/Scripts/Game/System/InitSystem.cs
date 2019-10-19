@@ -31,7 +31,7 @@ namespace Game.System
         {
             var prefab = Resources.Load<GameObject>(Constant.PlayerPrefabPath);
             var player = Object.Instantiate(prefab, _playerParent);
-            _contexts.player.CreateEntity().AddPlayer(InputBtn.NULL, player.transform);
+            _contexts.player.CreateEntity().AddPlayer(InputBtn.NULL, player.transform, false);
         }
 
         private void initCamera()

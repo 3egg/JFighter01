@@ -1,4 +1,4 @@
-namespace Game.Enums
+﻿namespace Game.Enums
 {
     public enum CameraState
     {
@@ -45,6 +45,6 @@ namespace Game.Enums
     {
         IDLE,
         RUN,
-        WALK
+        WALK,
     }
 }

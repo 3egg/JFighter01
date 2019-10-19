@@ -10,5 +10,6 @@ namespace Game.Component
     {
         public InputBtn inputBtn;
         public Transform player;
+        public bool isPress;
     }
 }
