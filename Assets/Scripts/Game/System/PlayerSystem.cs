@@ -18,7 +18,7 @@ namespace Game.System
 
         public void Initialize()
         {
-            _player = _contexts.player.player.player;
+            _player = _contexts.player.GetGroup(PlayerMatcher.Player).GetEntities()[0].player.player;
             _animator = _player.GetComponent<Animator>();
             _timer = Timer.Register(1, null);
             _timer.Pause();
@@ -41,12 +41,13 @@ namespace Game.System
 
         protected override void Execute(List<PlayerEntity> entities)
         {
-            var entity = entities.SingleEntity();
-            var inputBtn = entity.player.inputBtn;
-            var isPress = entity.player.isPress;
-            Debug.Log(inputBtn);
-            movePlayer(inputBtn);
-            walkToRun(isPress);
+            foreach (var entity in entities)
+            {
+                var inputBtn = entity.player.inputBtn;
+                var isPress = entity.player.isPress;
+                movePlayer(inputBtn);
+                walkToRun(isPress);
+            }
         }
 
         private void walkToRun(bool isPress)

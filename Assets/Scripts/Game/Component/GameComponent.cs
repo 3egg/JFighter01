@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Game.Component
 {
-    [Player,Unique]
+    [Player]
     public sealed class PlayerComponent : IComponent
     {
         public InputBtn inputBtn;
