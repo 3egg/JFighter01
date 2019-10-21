@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using Entitas;
 using Game.Enums;
@@ -41,13 +42,10 @@ namespace Game.System
 
         protected override void Execute(List<PlayerEntity> entities)
         {
-            foreach (var entity in entities)
-            {
-                var inputBtn = entity.player.inputBtn;
-                var isPress = entity.player.isPress;
-                movePlayer(inputBtn);
-                walkToRun(isPress);
-            }
+            var inputBtn = entities.First().player.inputBtn;
+            var isPress = entities.First().player.isPress;
+            movePlayer(inputBtn);
+            walkToRun(isPress);
         }
 
         private void walkToRun(bool isPress)
@@ -71,46 +69,7 @@ namespace Game.System
         private void movePlayer(InputBtn inputBtn)
         {
             _player.DOKill();
-            if (inputBtn == InputBtn.NULL)
-            {
-                playAnimator(PlayerAniIndex.IDLE);
-            }
-
-            if (inputBtn == InputBtn.FORWARD)
-            {
-                movement(Vector3.forward);
-                playerOrientation(Vector3.up);
-            }
-
-            if (inputBtn == InputBtn.DOWN)
-            {
-                movement(Vector3.back);
-                playerOrientation(Vector3.up * 180);
-            }
-
-            if (inputBtn == InputBtn.RIGHT)
-            {
-                movement(Vector3.right);
-                playerOrientation(Vector3.up * 90);
-            }
-
-            if (inputBtn == InputBtn.LEFT)
-            {
-                movement(Vector3.left);
-                playerOrientation(Vector3.up * -90);
-            }
-
-            if (inputBtn == InputBtn.ATTACKO)
-            {
-                Debug.Log("mouse 1 press");
-            }
-
-            if (inputBtn == InputBtn.ATTACKX)
-            {
-                Debug.Log("mouse 2 press");
-            }
-
-            /*switch (inputBtn)
+            switch (inputBtn)
             {
                 case InputBtn.NULL:
                     playAnimator(PlayerAniIndex.IDLE);
@@ -139,7 +98,7 @@ namespace Game.System
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(inputBtn), inputBtn, null);
-            }*/
+            }
         }
 
         private void playAnimator(PlayerAniIndex index)

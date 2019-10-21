@@ -8,7 +8,7 @@ namespace Game.System
     public class InputSystem : IExecuteSystem
     {
         private readonly Contexts _contexts;
-        private bool _isPress = false;
+        private bool _isPress;
 
         public InputSystem(Contexts contexts)
         {
@@ -17,6 +17,7 @@ namespace Game.System
 
         public void Execute()
         {
+            _isPress = false;
             //InputBtn.NULL, null, false
             if (Input.GetKey(KeyCode.A))
             {
@@ -37,33 +38,27 @@ namespace Game.System
             {
                 pressBtn(InputBtn.DOWN);
             }
+            
+            _contexts.player.CreateEntity().AddPlayer(InputBtn.NULL, null, _isPress);
 
             if (Input.GetMouseButtonDown(0))
             {
+                _isPress = true;
                 _contexts.player.CreateEntity().AddPlayer(InputBtn.ATTACKO, null, false);
             }
 
             if (Input.GetMouseButtonDown(1))
             {
+                _isPress = true;
                 _contexts.player.CreateEntity().AddPlayer(InputBtn.ATTACKX, null, false);
             }
         }
 
-        private void pressKey(KeyCode keyCode,InputBtn btn)
-        {
-            if (Input.GetKey(keyCode))
-            {
-                pressBtn(btn);
-            }
-            else
-            {
-                pressBtn(InputBtn.NULL, false);
-            }
-        }
 
-        private void pressBtn(InputBtn btn, bool isPress = true)
+        private void pressBtn(InputBtn btn)
         {
-            _contexts.player.CreateEntity().AddPlayer(btn, null, isPress);
+            _isPress = true;
+            _contexts.player.CreateEntity().AddPlayer(btn, null, _isPress);
         }
     }
 }
