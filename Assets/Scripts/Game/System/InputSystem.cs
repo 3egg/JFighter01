@@ -1,3 +1,4 @@
+using System.Linq;
 using Entitas;
 using Game.Enums;
 using UnityEngine;
@@ -16,12 +17,9 @@ namespace Game.System
 
         public void Execute()
         {
-            _isPress = false;
-            _contexts.player.ReplacePlayer(InputBtn.NULL, null, _isPress);
-
+            //InputBtn.NULL, null, false
             if (Input.GetKey(KeyCode.A))
             {
-                Debug.Log("press a");
                 pressBtn(InputBtn.LEFT);
             }
 
@@ -32,7 +30,6 @@ namespace Game.System
 
             if (Input.GetKey(KeyCode.W))
             {
-                Debug.Log("press w");
                 pressBtn(InputBtn.FORWARD);
             }
 
@@ -43,18 +40,30 @@ namespace Game.System
 
             if (Input.GetMouseButtonDown(0))
             {
-                _contexts.player.ReplacePlayer(InputBtn.ATTACKO, null, false);
+                _contexts.player.CreateEntity().AddPlayer(InputBtn.ATTACKO, null, false);
             }
 
             if (Input.GetMouseButtonDown(1))
             {
-                _contexts.player.ReplacePlayer(InputBtn.ATTACKX, null, false);
+                _contexts.player.CreateEntity().AddPlayer(InputBtn.ATTACKX, null, false);
+            }
+        }
+
+        private void pressKey(KeyCode keyCode,InputBtn btn)
+        {
+            if (Input.GetKey(keyCode))
+            {
+                pressBtn(btn);
+            }
+            else
+            {
+                pressBtn(InputBtn.NULL, false);
             }
         }
 
         private void pressBtn(InputBtn btn, bool isPress = true)
         {
-            _contexts.player.ReplacePlayer(btn, null, isPress);
+            _contexts.player.CreateEntity().AddPlayer(btn, null, isPress);
         }
     }
 }
