@@ -37,6 +37,9 @@
           </e>
           <e p="Feature.cs" t="Include" />
           <e p="Input" t="Include">
+            <e p="Components" t="Include">
+              <e p="InputInputSkillComponent.cs" t="Include" />
+            </e>
             <e p="InputAttribute.cs" t="Include" />
             <e p="InputComponentsLookup.cs" t="Include" />
             <e p="InputContext.cs" t="Include" />
@@ -257,9 +260,13 @@
             <e p="GameController.cs" t="Include" />
             <e p="GameControllerBehaviour.cs" t="Include" />
             <e p="GameSystems.cs" t="Include" />
+            <e p="LogicService" t="Include">
+              <e p="PlayerInputSystem.cs" t="Include" />
+            </e>
             <e p="system" t="Include">
               <e p="InitSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
+              <e p="PlayerSkillSystem.cs" t="Include" />
               <e p="PlayerSystem.cs" t="Include" />
             </e>
           </e>

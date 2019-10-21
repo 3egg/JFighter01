@@ -12,4 +12,12 @@ namespace Game.Component
         public Transform player;
         public bool isPress;
     }
+
+    [Input,Unique]
+    public sealed class InputSkillComponent : IComponent
+    {
+        //是否释放技能
+        public bool isValid;
+        public int skillCode;
+    } 
 }

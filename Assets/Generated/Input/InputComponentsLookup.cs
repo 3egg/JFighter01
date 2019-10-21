@@ -8,15 +8,15 @@
 //------------------------------------------------------------------------------
 public static class InputComponentsLookup {
 
+    public const int InputSkill = 0;
 
-
-    public const int TotalComponents = 0;
+    public const int TotalComponents = 1;
 
     public static readonly string[] componentNames = {
-
+        "InputSkill"
     };
 
     public static readonly System.Type[] componentTypes = {
-
+        typeof(Game.Component.InputSkillComponent)
     };
 }

@@ -5,7 +5,6 @@ using DG.Tweening;
 using Entitas;
 using Game.Enums;
 using UnityEngine;
-using NotImplementedException = System.NotImplementedException;
 
 namespace Game.System
 {
@@ -89,12 +88,6 @@ namespace Game.System
                 case InputBtn.LEFT:
                     movement(Vector3.left);
                     playerOrientation(Vector3.up * -90);
-                    break;
-                case InputBtn.ATTACKO:
-                    Debug.Log("k");
-                    break;
-                case InputBtn.ATTACKX:
-                    Debug.Log("l");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(inputBtn), inputBtn, null);

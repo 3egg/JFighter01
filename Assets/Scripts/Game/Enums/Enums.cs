@@ -7,7 +7,7 @@
         FELLOW,
         END,
     }
-    
+
     /// <summary>
     /// 相机父物体的位置
     /// </summary>
@@ -24,10 +24,10 @@
         DOWN,
         RIGHT,
         LEFT,
-        ATTACKO,
-        ATTACKX,
+        ATTACKX = 1,
+        ATTACKO = 2,
     }
-    
+
     /// <summary>
     /// 游戏状态
     /// </summary>
