@@ -22,17 +22,15 @@ namespace Game.System
         {
             pressBtnToMovePlayer();
 
-
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.K))
             {
                 pressMouseSkill(KeyCode.Mouse0);
             }
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetKeyDown(KeyCode.L))
             {
                 pressMouseSkill(KeyCode.Mouse1);
             }
-
         }
 
         private void pressBtnToMovePlayer()
@@ -71,33 +69,40 @@ namespace Game.System
 
         private void pressMouseSkill(KeyCode key)
         {
-            if (key != KeyCode.Mouse0 || key != KeyCode.Mouse1)
-            {
-                return;
-            }
-
             //当前计时器完成时,把isValid设置为true
-            void OnComplete()
+            void OnComplete(bool isTimer)
             {
-                SetSkillValid(true);
+                SetSkillValid(true, isTimer);
             }
 
-            void SetSkillValid(bool isValid)
+            void SetSkillValid(bool isValid, bool isTimer)
             {
-                var skillCode =
-                    PlayerInputSystem.single.getCurrentSkillCode(key == KeyCode.Mouse0 ? 1 : 2,
-                        _contexts.input.inputSkill.skillCode);
+                var skillCode = _contexts.input.inputSkill.skillCode;
+                if (isTimer && skillCode == 0)
+                {
+                    return;
+                }
+
+                if (skillCode == 0)
+                {
+                    skillCode = key == KeyCode.Mouse0 ? 1 : 2;
+                }
+
+                if (!isValid)
+                {
+                    skillCode =
+                        PlayerInputSystem.single.getCurrentSkillCode(key == KeyCode.Mouse0 ? 1 : 2,
+                            _contexts.input.inputSkill.skillCode);
+                }
+
+                //按下k inputSkill 1, 计时器  inputSkill 1
+                //按下kl inputSkill 12 
                 _contexts.input.ReplaceInputSkill(isValid, skillCode);
             }
 
-            _skillTimer = Timer.Register(0.2f, OnComplete);
-            //一定时间内按下的按钮次数,就出释放对应的技能
-            if (_skillTimer == null || _skillTimer.isDone || _skillTimer.isCompleted)
-            {
-                _skillTimer = Timer.Register(0.2f, OnComplete);
-            }
-            
-            SetSkillValid(false);
+            _skillTimer = Timer.Register(0.2f, () =>
+                OnComplete(true));
+            SetSkillValid(false, false);
         }
     }
 }

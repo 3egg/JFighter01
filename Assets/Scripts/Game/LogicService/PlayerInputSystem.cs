@@ -6,7 +6,7 @@ namespace Game.LogicService
 {
     public class PlayerInputSystem : SingletonUtil<PlayerInputSystem>
     {
-        public int getCurrentSkillCode(int btnCode, int currentCode)
+        public int getCurrentSkillCode(int inputCode, int currentCode)
         {
             if (currentCode < 0)
             {
@@ -14,11 +14,11 @@ namespace Game.LogicService
             }
             else if (currentCode == 0)
             {
-                currentCode = btnCode;
+                currentCode = inputCode;
             }
             else
             {
-                currentCode = (int) (btnCode * Mathf.Pow(10, getCodeLength(currentCode))) + currentCode;
+                currentCode = currentCode * 10 + inputCode;
             }
 
 

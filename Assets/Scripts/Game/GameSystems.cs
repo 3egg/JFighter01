@@ -9,6 +9,7 @@ namespace Game
             Add(new InitSystem(contexts));
             Add(new PlayerSystem(contexts));
             Add(new InputSystem(contexts));
+            Add(new PlayerSkillSystem(contexts));
         }
     }
 }

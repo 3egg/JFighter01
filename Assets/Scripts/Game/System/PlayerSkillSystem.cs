@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using Entitas;
-using NotImplementedException = System.NotImplementedException;
+using UnityEngine;
 
 namespace Game.System
 {
-    public class PlayerSkillSystem : ReactiveSystem<InputEntity>
+    public class PlayerSkillSystem : ReactiveSystem<InputEntity>, IInitializeSystem
     {
         private Contexts _contexts;
 
@@ -25,7 +25,14 @@ namespace Game.System
 
         protected override void Execute(List<InputEntity> entities)
         {
-            throw new NotImplementedException();
+            //发出信号,当前播放技能,动画,声音,特效
+            Debug.Log(entities.SingleEntity().inputSkill.skillCode.ToString());
+            entities.SingleEntity().ReplaceInputSkill(false, 0);
+        }
+
+        public void Initialize()
+        {
+            _contexts.input.SetInputSkill(false, 0);
         }
     }
 }
