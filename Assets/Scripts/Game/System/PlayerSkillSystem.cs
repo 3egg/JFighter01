@@ -25,8 +25,9 @@ namespace Game.System
 
         protected override void Execute(List<InputEntity> entities)
         {
+            var skillCode = entities.SingleEntity().inputSkill.skillCode;
+            _contexts.controller.ReplaceAnimatorSkillController(skillCode);
             //发出信号,当前播放技能,动画,声音,特效
-            Debug.Log(entities.SingleEntity().inputSkill.skillCode.ToString());
             entities.SingleEntity().ReplaceInputSkill(false, 0);
         }
 

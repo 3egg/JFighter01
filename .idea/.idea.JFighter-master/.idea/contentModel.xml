@@ -29,6 +29,9 @@
         <e p="Generated" t="Include">
           <e p="Contexts.cs" t="Include" />
           <e p="Controller" t="Include">
+            <e p="Components" t="Include">
+              <e p="ControllerAnimatorSkillControllerComponent.cs" t="Include" />
+            </e>
             <e p="ControllerAttribute.cs" t="Include" />
             <e p="ControllerComponentsLookup.cs" t="Include" />
             <e p="ControllerContext.cs" t="Include" />
@@ -247,6 +250,7 @@
             <e p="InputController.cs" t="Include" />
             <e p="LevelController.cs" t="Include" />
             <e p="LoadSceneController.cs" t="Include" />
+            <e p="SkillAniController.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
           </e>
           <e p="Game" t="Include">
@@ -266,6 +270,7 @@
             <e p="system" t="Include">
               <e p="InitSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
+              <e p="PlayerAnimatorSystem.cs" t="Include" />
               <e p="PlayerSkillSystem.cs" t="Include" />
               <e p="PlayerSystem.cs" t="Include" />
             </e>

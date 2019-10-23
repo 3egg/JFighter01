@@ -9,5 +9,6 @@ namespace Const
         public const string BUTTON_PARENT_NAME = "Buttons";
         public const string COMICS_ITEM_PATH = "Prefab/Comics/ComicsItem";
         public const string COMICS__PATH = "Comics/";
+        public const string SKILL_NAME = "Skill";
     }
 }

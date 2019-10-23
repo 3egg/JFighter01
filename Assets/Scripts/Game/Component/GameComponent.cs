@@ -13,11 +13,17 @@ namespace Game.Component
         public bool isPress;
     }
 
-    [Input,Unique]
+    [Input, Unique]
     public sealed class InputSkillComponent : IComponent
     {
         //是否释放技能
         public bool isValid;
         public int skillCode;
-    } 
+    }
+
+    [Controller, Unique]
+    public sealed class AnimatorSkillController : IComponent
+    {
+        public int skillCode = 0;
+    }
 }

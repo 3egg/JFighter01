@@ -1,3 +1,4 @@
+using System;
 using Game.Enums;
 using UnityEngine;
 using Utils;
@@ -23,6 +24,48 @@ namespace Game.LogicService
 
 
             return currentCode;
+        }
+
+        public int getSkillCode(string skillName, string prefix, string posfix)
+        {
+            string skillCode = "";
+            //移除动画名称的attack
+            if (!string.IsNullOrEmpty(prefix))
+            {
+                skillCode = skillName.Remove(0, prefix.Length);
+            }
+
+            if (!string.IsNullOrEmpty(posfix))
+            {
+                skillCode = skillName.Remove(skillName.Length - posfix.Length, posfix.Length);
+            }
+
+            return convertStringToInt(skillCode);
+        }
+
+        //转换string到int
+        public int convertStringToInt(string codeString)
+        {
+            var chars = codeString.ToCharArray();
+            string code = "";
+            foreach (var c in chars)
+            {
+                if (c == 'X')
+                {
+                    code += "1";
+                }
+                else
+                {
+                    code += "2";
+                }
+            }
+
+            return Int32.Parse(code);
+        }
+
+        private string convertIntToString(int code)
+        {
+            return "";
         }
 
         private int getCodeLength(int currentCode)
