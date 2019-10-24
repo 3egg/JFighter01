@@ -247,6 +247,7 @@
             <e p="AudioController.cs" t="Include" />
             <e p="BtnController.cs" t="Include" />
             <e p="ComicsController.cs" t="Include" />
+            <e p="IdleSwordController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="LevelController.cs" t="Include" />
             <e p="LoadSceneController.cs" t="Include" />
@@ -273,6 +274,10 @@
               <e p="PlayerAnimatorSystem.cs" t="Include" />
               <e p="PlayerSkillSystem.cs" t="Include" />
               <e p="PlayerSystem.cs" t="Include" />
+            </e>
+            <e p="View" t="Include">
+              <e p="HumanSkillSprite.cs" t="Include" />
+              <e p="HumanSkillView.cs" t="Include" />
             </e>
           </e>
           <e p="manager" t="Include">

@@ -17,8 +17,6 @@ namespace Game
 
         public GameController(Contexts contexts)
         {
-            var toInt = PlayerInputSystem.single.convertStringToInt("XOOX");
-            Debug.Log(toInt);
             // This is the heart of Match One:
             // All logic is contained in all the sub systems of GameSystems
             _systems = new GameSystems(contexts);

@@ -100,7 +100,7 @@ namespace Game.System
                 _contexts.input.ReplaceInputSkill(isValid, skillCode);
             }
 
-            _skillTimer = Timer.Register(0.2f, () =>
+            _skillTimer = Timer.Register(0.5f, () =>
                 OnComplete(true));
             SetSkillValid(false, false);
         }

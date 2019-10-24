@@ -10,11 +10,11 @@ namespace Game.System
     public class PlayerAnimatorSystem : ReactiveSystem<ControllerEntity>, IInitializeSystem
     {
         private Contexts _contexts;
-        private Animator _player;
+        private Animator _playerAnimator;
 
         public void Initialize()
         {
-            _player = _contexts.player.GetEntities()[0].player.player.GetComponent<Animator>();
+            _playerAnimator = _contexts.player.GetEntities()[0].player.player.GetComponent<Animator>();
             _contexts.controller.CreateEntity().AddAnimatorSkillController(0);
         }
 
@@ -42,7 +42,8 @@ namespace Game.System
                 return;
             }
 
-            _player.SetInteger(Constant.SKILL_NAME, skillCode);
+            _playerAnimator.SetInteger(Constant.SKILL_NAME, skillCode);
+            _playerAnimator.SetBool(Constant.IS_IDLE_SWORD, true);
         }
     }
 }

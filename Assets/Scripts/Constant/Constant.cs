@@ -10,5 +10,6 @@ namespace Const
         public const string COMICS_ITEM_PATH = "Prefab/Comics/ComicsItem";
         public const string COMICS__PATH = "Comics/";
         public const string SKILL_NAME = "Skill";
+        public const string IS_IDLE_SWORD = "IsIdleSword";
     }
 }

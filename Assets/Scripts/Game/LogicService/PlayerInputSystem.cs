@@ -1,5 +1,4 @@
 using System;
-using Game.Enums;
 using UnityEngine;
 using Utils;
 
@@ -44,7 +43,7 @@ namespace Game.LogicService
         }
 
         //转换string到int
-        public int convertStringToInt(string codeString)
+        private int convertStringToInt(string codeString)
         {
             var chars = codeString.ToCharArray();
             string code = "";
@@ -65,7 +64,21 @@ namespace Game.LogicService
 
         private string convertIntToString(int code)
         {
-            return "";
+            var array = code.ToString().ToCharArray();
+            var returnStr = "";
+            foreach (var c in array)
+            {
+                if (c == '1')
+                {
+                    returnStr += "X";
+                }
+                else
+                {
+                    returnStr += "O";
+                }
+            }
+
+            return returnStr;
         }
 
         private int getCodeLength(int currentCode)
