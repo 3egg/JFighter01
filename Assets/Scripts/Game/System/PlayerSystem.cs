@@ -22,6 +22,20 @@ namespace Game.System
             _animator = _player.GetComponent<Animator>();
             _timer = Timer.Register(1, null);
             _timer.Pause();
+
+            destroyUselessPlayer();
+        }
+
+        private void destroyUselessPlayer()
+        {
+            Timer.Register(1, () =>
+            {
+                foreach (var entity in _contexts.player.GetEntities().Where(
+                    i => i.player.player == null))
+                {
+                    entity.Destroy();
+                }
+            }, null, true);
         }
 
         public PlayerSystem(Contexts contexts) : base(contexts.player)

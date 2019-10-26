@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4944956210397942552}
   - component: {fileID: 4944956210397942758}
   - component: {fileID: 4944956210397942759}
+  - component: {fileID: 679110406}
+  - component: {fileID: 6884964491029730250}
   m_Layer: 0
   m_Name: HumanSkill
   m_TagString: Untagged
@@ -27,7 +29,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4944956210397942554}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -117,6 +119,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 1
   m_VerticalFit: 0
+--- !u!114 &679110406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944956210397942554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f34eff2e7824f8ba3107e986e0517a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  o: {fileID: 21300002, guid: a0f24782535324c00ba7ea53212b23c9, type: 3}
+  x: {fileID: 21300000, guid: a0f24782535324c00ba7ea53212b23c9, type: 3}
+--- !u!114 &6884964491029730250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944956210397942554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e91a11968cc4fcab9f225f224167cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4944956210831374807
 GameObject:
   m_ObjectHideFlags: 0

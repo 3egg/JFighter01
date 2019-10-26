@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Entitas;
+using Game.View;
 using UnityEngine;
 
 namespace Game.System

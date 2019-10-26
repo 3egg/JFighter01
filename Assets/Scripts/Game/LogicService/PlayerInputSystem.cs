@@ -43,7 +43,7 @@ namespace Game.LogicService
         }
 
         //转换string到int
-        private int convertStringToInt(string codeString)
+        public int convertStringToInt(string codeString)
         {
             var chars = codeString.ToCharArray();
             string code = "";
@@ -62,7 +62,7 @@ namespace Game.LogicService
             return Int32.Parse(code);
         }
 
-        private string convertIntToString(int code)
+        public string convertIntToString(int code)
         {
             var array = code.ToString().ToCharArray();
             var returnStr = "";

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Game.Enums
 {
     public class Constant
@@ -11,5 +13,6 @@ namespace Game.Enums
         public const string CameraRootInGame = "CameraRootInGame";
         public const string PlayerParaName = "AniIndex";
 
+        public static readonly string HumanSkillJsonPath = Application.streamingAssetsPath + "/HumanSkill.json";
     }
 }
