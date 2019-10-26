@@ -14,7 +14,6 @@ namespace Game.View
         private List<GameObject> _itemList = new List<GameObject>();
         public Sprite o;
         public Sprite x;
-        private Timer _imageTimer;
         private Timer _imageInnerTimer;
 
 
@@ -78,7 +77,7 @@ namespace Game.View
                 image.sprite = x;
             }
 
-            _imageTimer = Timer.Register(1f, () =>
+            Timer.Register(1f, () =>
             {
                 image.DOFade(0, .2f);
                 _imageInnerTimer = Timer.Register(.2f, () => { image.gameObject.SetActive(false); });

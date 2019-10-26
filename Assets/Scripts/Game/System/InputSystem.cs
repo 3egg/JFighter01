@@ -12,6 +12,7 @@ namespace Game.System
         private readonly Contexts _contexts;
         private bool _isPress;
         private Timer _skillTimer;
+        private bool _isAttacking;
 
         public InputSystem(Contexts contexts)
         {
@@ -21,20 +22,29 @@ namespace Game.System
         public void Execute()
         {
             pressBtnToMovePlayer();
-
+            
             if (Input.GetKeyDown(KeyCode.K))
             {
                 pressMouseSkill(KeyCode.Mouse0);
+                _isAttacking = true;
             }
 
             if (Input.GetKeyDown(KeyCode.L))
             {
                 pressMouseSkill(KeyCode.Mouse1);
+                _isAttacking = true;
             }
+            
+            _isAttacking = false;
         }
 
         private void pressBtnToMovePlayer()
         {
+            if (_isAttacking)
+            {
+                return;
+            }
+
             _isPress = false;
             //InputBtn.NULL, null, false
             if (Input.GetKey(KeyCode.A))
