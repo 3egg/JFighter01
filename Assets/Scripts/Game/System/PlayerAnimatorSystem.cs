@@ -17,6 +17,7 @@ namespace Game.System
     {
         private Contexts _contexts;
         private Animator _playerAnimator;
+
         private List<Skills> _skillses;
 
         public void Initialize()

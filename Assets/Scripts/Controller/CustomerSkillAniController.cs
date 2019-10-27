@@ -8,23 +8,23 @@ namespace Controller
     /// </summary>
     public class CustomerSkillAniController : StateMachineBehaviour
     {
-        public Action<Animator, AnimatorStateInfo> onStateEnterAction { get; set; }
-        public Action<Animator, AnimatorStateInfo> onStateUpdateAction { get; set; }
-        public Action<Animator, AnimatorStateInfo> onStateExitAction { get; set; }
+        public Action _onStateEnterAction { get; set; }
+        public Action _onStateUpdateAction { get; set; }
+        public Action _onStateExitAction { get; set; }
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            onStateEnterAction?.Invoke(animator,stateInfo);
+            _onStateEnterAction?.Invoke();
         }
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            onStateUpdateAction?.Invoke(animator,stateInfo);
+            _onStateUpdateAction?.Invoke();
         }
 
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            onStateExitAction?.Invoke(animator,stateInfo);
+            _onStateExitAction?.Invoke();
         }
     }
 }

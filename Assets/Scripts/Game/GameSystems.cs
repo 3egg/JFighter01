@@ -11,6 +11,7 @@ namespace Game
             Add(new InputSystem(contexts));
             Add(new PlayerSkillSystem(contexts));
             Add(new PlayerAnimatorSystem(contexts));
+            //Add(new PlayerAniStateSystem(contexts));
         }
     }
 }

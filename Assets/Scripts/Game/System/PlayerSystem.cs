@@ -57,6 +57,14 @@ namespace Game.System
         {
             var inputBtn = entities.First().player.inputBtn;
             var isPress = entities.First().player.isPress;
+            var inputSkill = _contexts.input.inputSkill;
+            var skillCode = inputSkill.skillCode;
+            //攻击可以移动?
+            if (skillCode > 0 || _animator.GetInteger(Const.Constant.SKILL_NAME) > 0)
+            {
+                return;
+            }
+
             movePlayer(inputBtn);
             walkToRun(isPress);
         }

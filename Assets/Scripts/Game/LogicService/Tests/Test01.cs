@@ -10,7 +10,7 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void Test01SimplePasses()
+        public void test01SimplePasses()
         {
             string str = "123456";
             Debug.Log(str.Substring(0, 4));
@@ -19,7 +19,7 @@ namespace Tests
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
-        public IEnumerator Test01WithEnumeratorPasses()
+        public IEnumerator test01WithEnumeratorPasses()
         {
             // Use the Assert class to test conditions.
             // Use yield to skip a frame.

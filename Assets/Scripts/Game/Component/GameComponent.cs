@@ -1,6 +1,7 @@
 using Entitas;
 using Entitas.CodeGeneration.Attributes;
 using Game.Enums;
+using Game.LogicService;
 using UnityEngine;
 
 namespace Game.Component
@@ -25,5 +26,12 @@ namespace Game.Component
     public sealed class AnimatorSkillController : IComponent
     {
         public int skillCode = 0;
+    }
+
+    
+    [Controller,Unique]
+    public class HumanAniStateController : IComponent
+    {
+        public CustomAniEventSystem customAniEventSystem;
     }
 }

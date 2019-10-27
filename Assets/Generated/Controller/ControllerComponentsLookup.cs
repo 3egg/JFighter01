@@ -9,14 +9,17 @@
 public static class ControllerComponentsLookup {
 
     public const int AnimatorSkillController = 0;
+    public const int HumanAniStateController = 1;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 2;
 
     public static readonly string[] componentNames = {
-        "AnimatorSkillController"
+        "AnimatorSkillController",
+        "HumanAniStateController"
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(Game.Component.AnimatorSkillController)
+        typeof(Game.Component.AnimatorSkillController),
+        typeof(Game.Component.HumanAniStateController)
     };
 }
