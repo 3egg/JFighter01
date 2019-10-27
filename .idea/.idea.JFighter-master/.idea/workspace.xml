@@ -24,22 +24,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c410f63-5906-4adb-a899-d381df7e62b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Components.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Interfaces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Generated/Events/Systems.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Old/cn.yahoo.asxhl2007/BasicDialog/Test/BasicDialogTest.apk.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Test01.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Test01.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Tests.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Tests.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CustomerSkillAniController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/CustomerSkillAniController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/CustomAniEventSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/CustomAniEventSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JFighter-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/03-Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/03-Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,10 +57,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Player/PlayerEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/LogicService/CustomAniEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameSystems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Contexts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Test01.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/01-Main.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Tests.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/129DE3D1-B862-4821-8ABB-BCAAB6F64869/d6/3d910739/EventAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Enums/Constant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Input/InputComponentsLookup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,6 +71,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Generated/Controller/Components/ControllerAnimatorSkillControllerComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/System/InitSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/CustomerSkillAniController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constant/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constant/Constant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test.cs" root0="FORCE_HIGHLIGHTING" />
@@ -126,10 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/LevelController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/BtnController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UiController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/ComicsPage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/ComisItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/ComicsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Component/CameraComponent.cs" />
@@ -171,12 +161,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/InitSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/AnyGameObjectEventSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Input/Components/InputInputBtnTestComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Input/Components/InputInputBtnTestListenerComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Generated/Events/Systems/InputBtnTestEventSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/PlayerAnimatorSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/Tests/Test01.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/InputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/CustomerSkillAniController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/CustomEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/CustomAniEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/LogicService/CustomAniEventSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/System/PlayerAnimatorSystem.cs" />
       </list>
     </option>
   </component>
@@ -260,7 +254,7 @@
       <workItem from="1572007696442" duration="4780000" />
       <workItem from="1572012504429" duration="1938000" />
       <workItem from="1572095249445" duration="1416000" />
-      <workItem from="1572142876522" duration="1253000" />
+      <workItem from="1572142876522" duration="3312000" />
     </task>
     <task id="LOCAL-00001" summary="add music">
       <created>1569638029988</created>
@@ -297,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571925098715</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add test components">
+      <created>1572146839129</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572146839129</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +328,8 @@
     <MESSAGE value="add skill test not finished" />
     <MESSAGE value="add skilcode" />
     <MESSAGE value="add animation idle state and ui code show part(not finished)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add animation idle state and ui code show part(not finished)" />
+    <MESSAGE value="add test components" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test components" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

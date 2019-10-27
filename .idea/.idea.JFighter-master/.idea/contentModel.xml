@@ -247,6 +247,7 @@
             <e p="AudioController.cs" t="Include" />
             <e p="BtnController.cs" t="Include" />
             <e p="ComicsController.cs" t="Include" />
+            <e p="CustomerSkillAniController.cs" t="Include" />
             <e p="IdleSwordController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="LevelController.cs" t="Include" />
@@ -266,6 +267,7 @@
             <e p="GameControllerBehaviour.cs" t="Include" />
             <e p="GameSystems.cs" t="Include" />
             <e p="LogicService" t="Include">
+              <e p="CustomAniEventSystem.cs" t="Include" />
               <e p="PlayerInputSystem.cs" t="Include" />
               <e p="Tests" t="Include">
                 <e p="Test01.cs" t="Include" />
