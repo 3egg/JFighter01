@@ -267,6 +267,10 @@
             <e p="GameSystems.cs" t="Include" />
             <e p="LogicService" t="Include">
               <e p="PlayerInputSystem.cs" t="Include" />
+              <e p="Tests" t="Include">
+                <e p="Test01.cs" t="Include" />
+                <e p="Tests.asmdef" t="Include" />
+              </e>
             </e>
             <e p="system" t="Include">
               <e p="InitSystem.cs" t="Include" />
@@ -276,7 +280,6 @@
               <e p="PlayerSystem.cs" t="Include" />
             </e>
             <e p="View" t="Include">
-              <e p="HumanSkillSprite.cs" t="Include" />
               <e p="HumanSkillView.cs" t="Include" />
             </e>
           </e>
@@ -287,6 +290,7 @@
           <e p="model" t="Include">
             <e p="ComicsPage.cs" t="Include" />
             <e p="ComisItem.cs" t="Include" />
+            <e p="SkillModel.cs" t="Include" />
           </e>
           <e p="test.cs" t="Include" />
           <e p="Utils" t="Include">
@@ -309,6 +313,7 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Tests.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
