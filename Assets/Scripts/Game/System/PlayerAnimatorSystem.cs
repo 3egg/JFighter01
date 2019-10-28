@@ -19,12 +19,23 @@ namespace Game.System
         private Animator _playerAnimator;
 
         private List<Skills> _skillses;
+        private TrailComboManager _manager;
 
         public void Initialize()
         {
-            _playerAnimator = _contexts.player.GetEntities()[0].player.player.GetComponent<Animator>();
+            var _player = _contexts.player.GetEntities()[0].player.player;
+            _playerAnimator = _player.GetComponent<Animator>();
             _contexts.controller.CreateEntity().AddAnimatorSkillController(0);
             _skillses = LoadManager.single.loadJson<SkillModel>(Enums.Constant.HumanSkillJsonPath).Skills;
+            loadTrails(_player);
+        }
+
+
+        private void loadTrails(Transform player)
+        {
+            var trails = LoadManager.single.loadAndInstaniate(Enums.Constant.Trails_Combo, player);
+            _manager = trails.transform.GetOrAddComponent<TrailComboManager>();
+            _manager.init();
         }
 
         public PlayerAnimatorSystem(Contexts context) : base(context.controller)
@@ -49,10 +60,15 @@ namespace Game.System
 
             if (returnSkillCode(skillCode)) return;
 
+            doWithSkillCode(skillCode);
+        }
 
+        private void doWithSkillCode(int skillCode)
+        {
             _playerAnimator.SetInteger(Constant.SKILL_NAME, skillCode);
             _playerAnimator.SetBool(Constant.IS_IDLE_SWORD, true);
-
+            
+            _manager.showTrails(skillCode);
             showSkillCodeOnUI(skillCode);
         }
 

@@ -7,6 +7,7 @@ namespace Game.Enums
         public const string PlayerPrefabPath = "Prefab/Player";
         public const string GameUIPrefabPath = "Prefab/GameUI";
         public const string HumanSkillItemPrefabPath = "Prefab/GameUI/HumanSkillItem";
+        public const string Trails_Combo = "Prefab/trails_combo01";
         public const string PlayerTag = "Player";
         public const string PlayerRoot1 = "PlayerRoot1";
         public const string CameraRoot1 = "CameraRoot1";

@@ -31,6 +31,7 @@
           <e p="Controller" t="Include">
             <e p="Components" t="Include">
               <e p="ControllerAnimatorSkillControllerComponent.cs" t="Include" />
+              <e p="ControllerHumanAniStateControllerComponent.cs" t="Include" />
             </e>
             <e p="ControllerAttribute.cs" t="Include" />
             <e p="ControllerComponentsLookup.cs" t="Include" />
@@ -273,11 +274,13 @@
                 <e p="Test01.cs" t="Include" />
                 <e p="Tests.asmdef" t="Include" />
               </e>
+              <e p="TrailComboManager.cs" t="Include" />
             </e>
             <e p="system" t="Include">
               <e p="InitSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
               <e p="PlayerAnimatorSystem.cs" t="Include" />
+              <e p="PlayerAniStateSystem.cs" t="Include" />
               <e p="PlayerSkillSystem.cs" t="Include" />
               <e p="PlayerSystem.cs" t="Include" />
             </e>

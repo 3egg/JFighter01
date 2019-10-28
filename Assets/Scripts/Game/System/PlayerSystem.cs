@@ -4,7 +4,10 @@ using System.Linq;
 using DG.Tweening;
 using Entitas;
 using Game.Enums;
+using Game.LogicService;
+using Manager;
 using UnityEngine;
+using Utils;
 
 namespace Game.System
 {
@@ -22,7 +25,6 @@ namespace Game.System
             _animator = _player.GetComponent<Animator>();
             _timer = Timer.Register(1, null);
             _timer.Pause();
-
             destroyUselessPlayer();
         }
 
@@ -67,6 +69,11 @@ namespace Game.System
 
             movePlayer(inputBtn);
             walkToRun(isPress);
+        }
+
+        private bool isAttacking()
+        {
+            return _animator.GetCurrentAnimatorStateInfo(0).IsName("Skill");
         }
 
         private void walkToRun(bool isPress)

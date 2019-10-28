@@ -7,6 +7,7 @@ namespace Controller
     public class SkillAniController : StateMachineBehaviour
     {
         private PlayerInputSystem _playerInputSystem;
+        //private TrailComboManager _manager;
 
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -14,6 +15,7 @@ namespace Controller
             if (_playerInputSystem == null)
             {
                 _playerInputSystem = PlayerInputSystem.single;
+                //_manager = FindObjectOfType<TrailComboManager>();
             }
         }
 
@@ -34,6 +36,7 @@ namespace Controller
         // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
         override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            
         }
 
         // OnStateMove is called right after Animator.OnAnimatorMove()
